@@ -12,3 +12,7 @@ Currently, there are mindmaps in FreePlane_ format.
 
 Contributions are welcome!
 
+Unless otherwise noted, all the content in this repository is published under
+the `Creative Commons Attribution-ShareAlike 3.0 Unported License`_.
+
+.. _Creative Commons Attribution-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-sa/3.0/.
