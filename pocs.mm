@@ -1,0 +1,721 @@
+<map version="freeplane 1.2.0">
+<!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
+<node TEXT="POCS" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1379339721940"><hook NAME="MapStyle">
+    <properties show_icon_for_attributes="true" show_note_icons="true"/>
+
+<map_styles>
+<stylenode LOCALIZED_TEXT="styles.root_node">
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right">
+<stylenode LOCALIZED_TEXT="default" MAX_WIDTH="600" COLOR="#000000" STYLE="as_parent">
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.details"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.note"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.floating">
+<edge STYLE="hide_edge"/>
+<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
+</stylenode>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right">
+<stylenode LOCALIZED_TEXT="styles.topic" COLOR="#18898b" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subtopic" COLOR="#cc3300" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subsubtopic" COLOR="#669900">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.important">
+<icon BUILTIN="yes"/>
+</stylenode>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right">
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000">
+<font SIZE="18"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,1" COLOR="#0033ff">
+<font SIZE="16"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,2" COLOR="#00b439">
+<font SIZE="14"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,3" COLOR="#990000">
+<font SIZE="12"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,4" COLOR="#111111">
+<font SIZE="10"/>
+</stylenode>
+</stylenode>
+</stylenode>
+</map_styles>
+</hook>
+<hook NAME="AutomaticEdgeColor" COUNTER="4"/>
+<node TEXT="Administrativia" POSITION="right" ID="ID_323086254" CREATED="1379413522540" MODIFIED="1379413526003">
+<edge COLOR="#00ff00"/>
+<node TEXT="grading" ID="ID_1154067530" CREATED="1379413527012" MODIFIED="1379413528127">
+<node TEXT="40% Design Projects" ID="ID_1076590739" CREATED="1379413528706" MODIFIED="1379413535077">
+<node TEXT="in teams of three" ID="ID_592610186" CREATED="1379413586238" MODIFIED="1379413588720"/>
+<node TEXT="a simulated research paper" ID="ID_1633234532" CREATED="1379413595783" MODIFIED="1379413601559"/>
+<node TEXT="DP1 released this week, due October 18" ID="ID_377450920" CREATED="1379413613782" MODIFIED="1379413819371"/>
+</node>
+<node TEXT="20% One-Pagers" ID="ID_1507050491" CREATED="1379413535595" MODIFIED="1379413540929">
+<node TEXT="released Tuesdays" ID="ID_1986833030" CREATED="1379413574972" MODIFIED="1379413581150"/>
+<node TEXT="due Fridays" ID="ID_212218778" CREATED="1379413581358" MODIFIED="1379413583306"/>
+</node>
+<node TEXT="40% Exam" ID="ID_628283665" CREATED="1379413541177" MODIFIED="1379413548178">
+<node TEXT="in-class" ID="ID_412394678" CREATED="1379413553437" MODIFIED="1379413558529"/>
+<node TEXT="closed book" ID="ID_1509596806" CREATED="1379413558793" MODIFIED="1379413560647"/>
+</node>
+<node TEXT="curve grading" ID="ID_1135578728" CREATED="1379413949038" MODIFIED="1379413951608">
+<node TEXT="per individual assignment" ID="ID_605367015" CREATED="1379413952137" MODIFIED="1379413957843"/>
+</node>
+</node>
+</node>
+<node TEXT="Intro" POSITION="right" ID="ID_362390326" CREATED="1379339755188" MODIFIED="1379402986245">
+<edge COLOR="#ff0000"/>
+<node TEXT="why POCS?" ID="ID_96974324" CREATED="1379339764741" MODIFIED="1379339768146">
+<node TEXT="science and fundamentals of computer systems" ID="ID_183956582" CREATED="1379339798277" MODIFIED="1379339805799"/>
+<node TEXT="modern life depends on systems" ID="ID_565550802" CREATED="1379339807877" MODIFIED="1379339813731"/>
+<node TEXT="do we understand systems?" ID="ID_1606101431" CREATED="1379339843286" MODIFIED="1379339849011">
+<node TEXT="do they work properly?" ID="ID_25231034" CREATED="1379339849750" MODIFIED="1379339856291"/>
+<node TEXT="bugs" ID="ID_1852586212" CREATED="1379339856725" MODIFIED="1379339859764">
+<node TEXT="mars rover" ID="ID_1380302670" CREATED="1379340438426" MODIFIED="1379340441159">
+<node TEXT="vxworks operating system" ID="ID_921807499" CREATED="1379340441882" MODIFIED="1379340446264"/>
+<node TEXT="priority inversion" ID="ID_1969153049" CREATED="1379340446490" MODIFIED="1379340452553"/>
+</node>
+<node TEXT="us air traffic control" ID="ID_1736374107" CREATED="1379340465451" MODIFIED="1379340469671">
+<node TEXT="lost contact to 400 place" ID="ID_975414311" CREATED="1379340470586" MODIFIED="1379340478456"/>
+<node TEXT="backup system failed, too" ID="ID_1719015137" CREATED="1379340478650" MODIFIED="1379340482456"/>
+</node>
+<node TEXT="GE XA 21" ID="ID_1740504918" CREATED="1379340493419" MODIFIED="1379340498264">
+<node TEXT="power grid was overloaded" ID="ID_1330362259" CREATED="1379340499099" MODIFIED="1379340508632"/>
+<node TEXT="monitoring events queued up" ID="ID_861605423" CREATED="1379340508843" MODIFIED="1379340525992"/>
+<node TEXT="nobody noticed problems" ID="ID_1248961574" CREATED="1379340528603" MODIFIED="1379340535000"/>
+</node>
+</node>
+</node>
+<node TEXT="key attributes" ID="ID_1933093020" CREATED="1379339864806" MODIFIED="1379339867779">
+<node TEXT="safety" ID="ID_137188598" CREATED="1379339870678" MODIFIED="1379339872324">
+<node TEXT="no catastrophic consequences" ID="ID_299806217" CREATED="1379339872886" MODIFIED="1379339878851"/>
+</node>
+<node TEXT="security" ID="ID_129640788" CREATED="1379339879574" MODIFIED="1379339882148">
+<node TEXT="prevents attacks, thefts, ..." ID="ID_1294191609" CREATED="1379339882806" MODIFIED="1379339888964"/>
+</node>
+<node TEXT="reliability" ID="ID_550810366" CREATED="1379339889670" MODIFIED="1379339892211">
+<node TEXT="works correctly" ID="ID_924396496" CREATED="1379339892934" MODIFIED="1379339898371"/>
+</node>
+<node TEXT="performance" ID="ID_1013122781" CREATED="1379339899254" MODIFIED="1379339901876">
+<node TEXT="throughput" ID="ID_185576867" CREATED="1379339902710" MODIFIED="1379339905827"/>
+<node TEXT="latency" ID="ID_1112965078" CREATED="1379339906070" MODIFIED="1379339908291"/>
+</node>
+<node TEXT="manageability" ID="ID_988924805" CREATED="1379339909078" MODIFIED="1379339912308">
+<node TEXT="low risk for error" ID="ID_630298126" CREATED="1379339913254" MODIFIED="1379339916308"/>
+</node>
+<node TEXT="others" ID="ID_233878757" CREATED="1379339918294" MODIFIED="1379339919395">
+<node TEXT="energy efficiency" ID="ID_99366244" CREATED="1379339920070" MODIFIED="1379339924307"/>
+</node>
+</node>
+<node TEXT="principles" ID="ID_77697535" CREATED="1379339951991" MODIFIED="1379339954644">
+<node TEXT="layering" ID="ID_791972527" CREATED="1379339944694" MODIFIED="1379339946547"/>
+<node TEXT="end-to-end" ID="ID_692840640" CREATED="1379339955447" MODIFIED="1379339957539"/>
+</node>
+<node TEXT="&#x2192; design patterns for system design" ID="ID_1163934644" CREATED="1379339991431" MODIFIED="1379340002692"/>
+<node TEXT="system research is exciting" ID="ID_617093788" CREATED="1379340118487" MODIFIED="1379340123493">
+<node TEXT="aloha &#x2192; ethernet &#x2192; internet" ID="ID_38394741" CREATED="1379340124231" MODIFIED="1379340139813"/>
+<node TEXT="time-sharing operating systems" ID="ID_1644937039" CREATED="1379340141976" MODIFIED="1379340150469"/>
+<node TEXT="RISC processor at Berkeley, Stanford" ID="ID_945045937" CREATED="1379340150743" MODIFIED="1379340161317"/>
+</node>
+<node TEXT="want to understand past systems to learn from them." ID="ID_1842398095" CREATED="1379340253769" MODIFIED="1379340266550"/>
+</node>
+<node TEXT="what is a system?" ID="ID_1181696332" CREATED="1379340323897" MODIFIED="1379340331158">
+<node TEXT="def" ID="ID_919742336" CREATED="1379340331978" MODIFIED="1379340335495">
+<node TEXT="A system is a set of interconnected components that &#xd;has an expected behavior observed at the interface with its environment." ID="ID_1975354180" CREATED="1379397851419" MODIFIED="1379397875021">
+<icon BUILTIN="info"/>
+</node>
+<node TEXT="interconnected components" ID="ID_1055459604" CREATED="1379340341273" MODIFIED="1379340346342">
+<node TEXT="depend on point of view" ID="ID_1614766999" CREATED="1379398046593" MODIFIED="1379398051762"/>
+<node TEXT="different granularities" ID="ID_424356386" CREATED="1379398051955" MODIFIED="1379398055200"/>
+</node>
+<node TEXT="collective behavior" ID="ID_750158544" CREATED="1379340346601" MODIFIED="1379340353478"/>
+<node TEXT="interface with environment" ID="ID_191931307" CREATED="1379340353705" MODIFIED="1379340361718"/>
+<node TEXT="divides the universe into the &quot;system&quot; and the &quot;environment&quot;, separated by the &quot;interface&quot;" ID="ID_1567522620" CREATED="1379397901605" MODIFIED="1379397931392"/>
+</node>
+<node TEXT="examples" ID="ID_1157038452" CREATED="1379340387578" MODIFIED="1379340388935">
+<node TEXT="smartphone" ID="ID_227424356" CREATED="1379340389594" MODIFIED="1379340391543"/>
+<node TEXT="shared calendar" ID="ID_1232116068" CREATED="1379340409530" MODIFIED="1379340413783"/>
+<node TEXT="self-driving car" ID="ID_1143272131" CREATED="1379340419274" MODIFIED="1379340422055"/>
+</node>
+<node TEXT="good design" ID="ID_920455389" CREATED="1379340572635" MODIFIED="1379344399704">
+<node TEXT="can one predict the behavior of a system from the behavior of its components?" ID="ID_1124169814" CREATED="1379340585851" MODIFIED="1379340599944"/>
+</node>
+</node>
+<node TEXT="complexity challenge" ID="ID_581586820" CREATED="1379340847565" MODIFIED="1379340851418">
+<node TEXT="computer systems are complex" ID="ID_1552059485" CREATED="1379340855837" MODIFIED="1379340859930">
+<node TEXT="lit. &quot;difficult to understand&quot;" ID="ID_367662246" CREATED="1379398236445" MODIFIED="1379398250000"/>
+</node>
+<node TEXT="bridge analogy" ID="ID_530984875" CREATED="1379340873149" MODIFIED="1379340876443">
+<node TEXT="exist since 3000 years" ID="ID_655723623" CREATED="1379340877342" MODIFIED="1379340889419">
+<node TEXT="vs software: 60 years" ID="ID_662011767" CREATED="1379340890301" MODIFIED="1379340897147"/>
+</node>
+<node TEXT="rely on laws of physics" ID="ID_149109246" CREATED="1379340900142" MODIFIED="1379340906091">
+<node TEXT="software is more flexible" ID="ID_1624076465" CREATED="1379340906718" MODIFIED="1379340910203"/>
+<node TEXT="software limited by our understanding" ID="ID_465481299" CREATED="1379347728707" MODIFIED="1379347735152"/>
+<node TEXT="but has less structure to stand on" ID="ID_875950074" CREATED="1379340910430" MODIFIED="1379340917099"/>
+</node>
+<node TEXT="design process" ID="ID_211601477" CREATED="1379341773909" MODIFIED="1379341777427">
+<node TEXT="briges have rigid processes" ID="ID_1745679146" CREATED="1379341778086" MODIFIED="1379341783218"/>
+<node TEXT="inspection/approval steps" ID="ID_985730580" CREATED="1379341783508" MODIFIED="1379341799458"/>
+</node>
+<node TEXT="expertise" ID="ID_1396192084" CREATED="1379345634242" MODIFIED="1379345638527">
+<node TEXT="anybody can build software!" ID="ID_1424767840" CREATED="1379345639266" MODIFIED="1379345645023">
+<node TEXT="OK, that wasn&apos;t true in 1985" ID="ID_236930179" CREATED="1379345669874" MODIFIED="1379345676415"/>
+</node>
+<node TEXT="whereas only experts can build bridges" ID="ID_1838718090" CREATED="1379345645538" MODIFIED="1379345653039"/>
+<node TEXT="and only few bridges are built" ID="ID_1317898026" CREATED="1379345653234" MODIFIED="1379345658879"/>
+</node>
+<node TEXT="analogy courtesy of Alfred Spector" ID="ID_1048691676" CREATED="1379341732067" MODIFIED="1379341747409"/>
+</node>
+<node TEXT="specifics of computer systems" ID="ID_1478373574" CREATED="1379403694655" MODIFIED="1379403700585">
+<node TEXT="not bound by laws of physics" ID="ID_1331351889" CREATED="1379403701114" MODIFIED="1379403707781">
+<node TEXT="e.g. nearby bounds" ID="ID_1805716203" CREATED="1379403740401" MODIFIED="1379403744678">
+<node TEXT="in analog systems, noise limits communication range" ID="ID_1538881448" CREATED="1379403745440" MODIFIED="1379403756456"/>
+<node TEXT="&#x21d2; components tend to be close geographically" ID="ID_1980617947" CREATED="1379403757642" MODIFIED="1379403766990"/>
+<node TEXT="noise limits the number of components that can interact" ID="ID_726416040" CREATED="1379403842468" MODIFIED="1379403851246"/>
+</node>
+<node TEXT="digital = no noise" ID="ID_442119933" CREATED="1379403901499" MODIFIED="1379403905753">
+<node TEXT="example of the robustness principle" ID="ID_1535275079" CREATED="1379403906682" MODIFIED="1379403913743"/>
+<node TEXT="means that composition is much less limited" ID="ID_184345680" CREATED="1379403913967" MODIFIED="1379403928458"/>
+<node TEXT="systems can get much larger than analog systems" ID="ID_84694900" CREATED="1379403928641" MODIFIED="1379403940720"/>
+<node TEXT="errors are either corrected, or major" ID="ID_305398376" CREATED="1379404002912" MODIFIED="1379404010696"/>
+</node>
+</node>
+<node TEXT="unprecedented rate of change" ID="ID_352230333" CREATED="1379403708068" MODIFIED="1379403713342">
+<node TEXT="by the time a system is done, computers have become faster" ID="ID_1777170937" CREATED="1379404592861" MODIFIED="1379404601171"/>
+<node TEXT="hard to anticipate future developments when building a system" ID="ID_636616568" CREATED="1379404601726" MODIFIED="1379404613870">
+<node TEXT="market for five computers?" ID="ID_1319094369" CREATED="1379404688319" MODIFIED="1379404693557"/>
+</node>
+<node TEXT="outpace other domains" ID="ID_484800895" CREATED="1379404721124" MODIFIED="1379404781166">
+<node TEXT="usability suffers because human testing needs time" ID="ID_1576806540" CREATED="1379404725347" MODIFIED="1379404786154"/>
+<node TEXT="legislation needs even more time" ID="ID_1481288033" CREATED="1379404758577" MODIFIED="1379404766959"/>
+</node>
+<node TEXT="&#x21d2; agile methods" ID="ID_1362788199" CREATED="1379404614847" MODIFIED="1379404620575"/>
+<node TEXT="&#x21d2; brute force often works" ID="ID_870752826" CREATED="1379404623086" MODIFIED="1379404628439">
+<node TEXT="e.g., just wait for a faster processor" ID="ID_1747707226" CREATED="1379404629015" MODIFIED="1379404634646"/>
+<node TEXT="just throw hardware at it" ID="ID_1719830212" CREATED="1379404634837" MODIFIED="1379404642568"/>
+</node>
+</node>
+</node>
+<node TEXT="software = decision tree" ID="ID_1074325596" CREATED="1379340920478" MODIFIED="1379340925595">
+<node TEXT="testing can only cover a minor fraction of possibilities" ID="ID_713211998" CREATED="1379340946222" MODIFIED="1379340954731"/>
+<node TEXT="many paths" ID="ID_38562745" CREATED="1379340970414" MODIFIED="1379340975356">
+<node TEXT="firefox: 5mio lines of code" ID="ID_19345967" CREATED="1379340976094" MODIFIED="1379340987691"/>
+<node TEXT="~2^500000 paths" ID="ID_396520795" CREATED="1379340992736" MODIFIED="1379341004396"/>
+</node>
+</node>
+<node TEXT="strategies for correctness" ID="ID_1785510233" CREATED="1379341013678" MODIFIED="1379341022763">
+<node TEXT="testing" ID="ID_1692902912" CREATED="1379341023390" MODIFIED="1379341024827"/>
+<node TEXT="correct by construction" ID="ID_1289337919" CREATED="1379341025054" MODIFIED="1379341030124"/>
+<node TEXT="proofs of correctness" ID="ID_1043459580" CREATED="1379341035631" MODIFIED="1379341039707"/>
+</node>
+</node>
+<node TEXT="verification" ID="ID_1103781169" CREATED="1379341105887" MODIFIED="1379341108509">
+<node TEXT="can proof 7LOC by hand" ID="ID_1202440761" CREATED="1379341141904" MODIFIED="1379341153773"/>
+<node TEXT="can proof 24LOC by machine" ID="ID_1771041214" CREATED="1379341162256" MODIFIED="1379341170140"/>
+<node TEXT="can proof 7500LOC using a proof assistant" ID="ID_167844562" CREATED="1379341170447" MODIFIED="1379341180700"/>
+<node TEXT="can proof 100KLOC by abstract interpretation" ID="ID_1200094807" CREATED="1379341180975" MODIFIED="1379341192684"/>
+<node TEXT="no where close to real system sizes :(" ID="ID_1322441096" CREATED="1379341192943" MODIFIED="1379341205629"/>
+<node TEXT="&#x2192; need principles" ID="ID_5495407" CREATED="1379341216640" MODIFIED="1379341224157">
+<node TEXT="modularity" ID="ID_677290837" CREATED="1379341225200" MODIFIED="1379341227631"/>
+<node TEXT="abstraction" ID="ID_1845114840" CREATED="1379341227872" MODIFIED="1379341229805"/>
+<node TEXT="layering" ID="ID_1619274409" CREATED="1379341230000" MODIFIED="1379341232365"/>
+</node>
+</node>
+<node TEXT="sources of complexity" ID="ID_1028083651" CREATED="1379341298945" MODIFIED="1379341302830">
+<node TEXT="path / state explosion" ID="ID_1024798414" CREATED="1379341303633" MODIFIED="1379341307934"/>
+<node TEXT="requirements" ID="ID_658987111" CREATED="1379341312561" MODIFIED="1379341593920">
+<node TEXT="success rate decreases with budget" ID="ID_890894641" CREATED="1379341319425" MODIFIED="1379341327422"/>
+<node TEXT="projects &gt; $10mio succeed with &lt;10%" ID="ID_147802096" CREATED="1379341337666" MODIFIED="1379341355183"/>
+<node TEXT="complexity grows with number of requirements" ID="ID_1733014123" CREATED="1379341370081" MODIFIED="1379341385214">
+<node TEXT="more than linear growth" ID="ID_155281133" CREATED="1379341385697" MODIFIED="1379341391118"/>
+<node TEXT="example: package dependencies" ID="ID_1657436330" CREATED="1379341397570" MODIFIED="1379341402750"/>
+<node TEXT="Principle of escalating complexity" ID="ID_1305522602" CREATED="1379401128683" MODIFIED="1379401143140">
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="conclusion" ID="ID_1591486020" CREATED="1379341409426" MODIFIED="1379401441979">
+<node TEXT="Avoid excessive generality" ID="ID_1999064485" CREATED="1379401445465" MODIFIED="1379401451914">
+<font BOLD="true"/>
+</node>
+<node TEXT="don&apos;t build the most general system possible" ID="ID_300860583" CREATED="1379401443147" MODIFIED="1379401444851"/>
+</node>
+</node>
+<node TEXT="changes" ID="ID_191032886" CREATED="1379407986631" MODIFIED="1379407988733">
+<node TEXT="of requirements over time" ID="ID_661458332" CREATED="1379408008428" MODIFIED="1379408012641"/>
+<node TEXT="of hardware / environment / ... during the time the system is built" ID="ID_788509002" CREATED="1379408012857" MODIFIED="1379408028647"/>
+</node>
+<node TEXT="efficiency" ID="ID_494268775" CREATED="1379341421602" MODIFIED="1379341424960">
+<node TEXT="e.g., more performance might require a cache" ID="ID_630008705" CREATED="1379341427954" MODIFIED="1379341445615"/>
+<node TEXT="the cache might lead to a weakly consistent interface" ID="ID_574897298" CREATED="1379341445826" MODIFIED="1379341459407"/>
+<node TEXT="Law of diminishing returns" ID="ID_231906772" CREATED="1379401907976" MODIFIED="1379401914026">
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="change" ID="ID_1005937032" CREATED="1379401643452" MODIFIED="1379401644685">
+<node TEXT="requirements change over time" ID="ID_875975990" CREATED="1379401645365" MODIFIED="1379401648995"/>
+<node TEXT="people who know the system disappear" ID="ID_307233221" CREATED="1379401649202" MODIFIED="1379401660782"/>
+</node>
+<node TEXT="evolution" ID="ID_1906224968" CREATED="1379341472210" MODIFIED="1379341474079">
+<node TEXT="requirements change" ID="ID_505904518" CREATED="1379341475666" MODIFIED="1379341482783"/>
+<node TEXT="system is patched..." ID="ID_1105182167" CREATED="1379341483602" MODIFIED="1379341487391"/>
+<node TEXT="changes introduce new complexity" ID="ID_1032296790" CREATED="1379341489602" MODIFIED="1379341495471"/>
+<node TEXT="50% of all fixes (for concurrency bugs) introduce new bugs" ID="ID_1269413172" CREATED="1379341506914" MODIFIED="1379341521122"/>
+<node TEXT="successful systems evolve fast" ID="ID_1633347196" CREATED="1379341536003" MODIFIED="1379341543296">
+<node TEXT="e.g., android grew by 10x in four years" ID="ID_971420339" CREATED="1379341545362" MODIFIED="1379341554255"/>
+</node>
+</node>
+</node>
+<node TEXT="symptoms of complexity" ID="ID_336991337" CREATED="1379341703540" MODIFIED="1379341708177">
+<node TEXT="large number of components" ID="ID_1595176325" CREATED="1379341821989" MODIFIED="1379341825986">
+<node TEXT="many things can break" ID="ID_690888821" CREATED="1379341833797" MODIFIED="1379341838546"/>
+</node>
+<node TEXT="many interconnections" ID="ID_630560403" CREATED="1379341826213" MODIFIED="1379341830274">
+<node TEXT="e.g., many package dependencies" ID="ID_219833077" CREATED="1379341850645" MODIFIED="1379341857250"/>
+<node TEXT="system has chaotic behavior" ID="ID_413091051" CREATED="1379341883477" MODIFIED="1379341890882"/>
+</node>
+<node TEXT="many irregularities and exceptions" ID="ID_1325223226" CREATED="1379342023670" MODIFIED="1379342031955"/>
+<node TEXT="kolmogorov complexity" ID="ID_263505808" CREATED="1379341921397" MODIFIED="1379341928051">
+<node TEXT="&quot;minimal length needed to specify an object&quot;" ID="ID_1055094360" CREATED="1379341930326" MODIFIED="1379341939955"/>
+<node TEXT="if it takes a lot of documentation to specify a system, it&apos;s complex" ID="ID_1159744662" CREATED="1379341982391" MODIFIED="1379341996835"/>
+<node TEXT="example: seL4" ID="ID_1167932883" CREATED="1379341997656" MODIFIED="1379342001619">
+<node TEXT="spec is 2x the size of the program" ID="ID_413668507" CREATED="1379342002711" MODIFIED="1379342022931"/>
+</node>
+</node>
+<node TEXT="many people working on it" ID="ID_1580459935" CREATED="1379398357382" MODIFIED="1379398361119"/>
+</node>
+<node TEXT="properties of systems" ID="ID_1288254929" CREATED="1379342267432" MODIFIED="1379342273301">
+<node TEXT="what distinguishes systems from components" ID="ID_1232299843" CREATED="1379342292296" MODIFIED="1379342338966">
+<node TEXT="emergent properties" ID="ID_424384376" CREATED="1379342339705" MODIFIED="1379342354277"/>
+<node TEXT="propagation of effects" ID="ID_668764623" CREATED="1379342355224" MODIFIED="1379342360693"/>
+<node TEXT="incommesurate scaling" ID="ID_730933929" CREATED="1379342360904" MODIFIED="1379342364966"/>
+<node TEXT="inevitable trade-offs" ID="ID_1935101116" CREATED="1379342365192" MODIFIED="1379342370198"/>
+</node>
+<node TEXT="emergent properties" ID="ID_1924277312" CREATED="1379342373913" MODIFIED="1379342384118">
+<node TEXT="not evident in the components" ID="ID_1646910791" CREATED="1379342397353" MODIFIED="1379342406214"/>
+<node TEXT="appear when combining components" ID="ID_721176114" CREATED="1379347875220" MODIFIED="1379347884545"/>
+<node TEXT="example: millenium bridge" ID="ID_254916775" CREATED="1379342431977" MODIFIED="1379342437814">
+<node TEXT="humans synchronize steps" ID="ID_793319401" CREATED="1379342438441" MODIFIED="1379342447191"/>
+<node TEXT="makes bridge sway" ID="ID_1418790982" CREATED="1379342447417" MODIFIED="1379342452151"/>
+</node>
+<node TEXT="example: team processes" ID="ID_577893271" CREATED="1379347918324" MODIFIED="1379347926465">
+<node TEXT="e.g., deciding the topic for the Helden-Sola 2013" ID="ID_1001925183" CREATED="1379347927172" MODIFIED="1379347936641"/>
+</node>
+</node>
+<node TEXT="propagation of effects" ID="ID_1677443216" CREATED="1379342466074" MODIFIED="1379342470231">
+<node TEXT="what happens in one component can impact many other components" ID="ID_829776877" CREATED="1379342470938" MODIFIED="1379342481607"/>
+<node TEXT="components in large systems are very tightly coupled!" ID="ID_1936267288" CREATED="1379347983205" MODIFIED="1379347999137"/>
+<node TEXT="chaotic behavior" ID="ID_630605166" CREATED="1379342481786" MODIFIED="1379342484487"/>
+<node TEXT="&#x2192; futureICT" ID="ID_1593959772" CREATED="1379342484746" MODIFIED="1379342496615"/>
+<node TEXT="example: interconnect of fincancial world" ID="ID_974123615" CREATED="1379342518410" MODIFIED="1379342530128">
+<node TEXT="leads to global crashes" ID="ID_1990184102" CREATED="1379342530970" MODIFIED="1379342535239"/>
+</node>
+<node TEXT="example: tree falling on power line" ID="ID_529633754" CREATED="1379348009237" MODIFIED="1379348017138">
+<node TEXT="leads to blackout 1000 miles away" ID="ID_1359746661" CREATED="1379348017765" MODIFIED="1379348024290"/>
+</node>
+<node TEXT="&quot;there are no small changes in a large system&quot;" ID="ID_1223478566" CREATED="1379348102309" MODIFIED="1379348111410"/>
+</node>
+<node TEXT="incommesurate scaling" ID="ID_185551771" CREATED="1379342537530" MODIFIED="1379342542345">
+<node TEXT="different parts scale unequally" ID="ID_1528043634" CREATED="1379342557290" MODIFIED="1379348140067"/>
+<node TEXT="&quot;on being the right size&quot;" ID="ID_1518096228" CREATED="1379342569530" MODIFIED="1379342580504">
+<node TEXT="could not scale an ant to the size of a mouse" ID="ID_789284329" CREATED="1379342581404" MODIFIED="1379342589736">
+<node TEXT="mouse needs blood system" ID="ID_1106525559" CREATED="1379342631178" MODIFIED="1379342640392"/>
+<node TEXT="ant can absorb oxigen from air" ID="ID_1249094070" CREATED="1379342640602" MODIFIED="1379342647400"/>
+</node>
+<node TEXT="could not scale a mouse to elephant size" ID="ID_1365682840" CREATED="1379342648506" MODIFIED="1379342656712">
+<node TEXT="needs much stronger bones to support weight" ID="ID_698249922" CREATED="1379342657579" MODIFIED="1379342665000"/>
+<node TEXT="weight grows cubically, with volume" ID="ID_1173995303" CREATED="1379348168390" MODIFIED="1379348177619"/>
+<node TEXT="bone strength grows quadratically, with cross-section" ID="ID_1756015023" CREATED="1379348177830" MODIFIED="1379348187491"/>
+</node>
+</node>
+<node TEXT="cannot build arbitrarily large systems" ID="ID_590936336" CREATED="1379348343127" MODIFIED="1379348350580">
+<node TEXT="skyscrapers would use all ground floor to access upper floors" ID="ID_760229006" CREATED="1379348351319" MODIFIED="1379348375413"/>
+<node TEXT="supertankers cannot break within visible range" ID="ID_511791373" CREATED="1379348375639" MODIFIED="1379348392293"/>
+<node TEXT="the larger the systems, the more complex tools are needed" ID="ID_1272072818" CREATED="1379401567665" MODIFIED="1379401577279"/>
+</node>
+<node TEXT="incommesurate scaling rule" ID="ID_1169492536" CREATED="1379404391334" MODIFIED="1379404402952">
+<node TEXT="changing a system parameter by an order of magnitude requires a new design" ID="ID_1139633631" CREATED="1379404403567" MODIFIED="1379404433115">
+<font BOLD="true"/>
+</node>
+</node>
+</node>
+<node TEXT="trade-offs" ID="ID_1636575053" CREATED="1379342677355" MODIFIED="1379342680072">
+<node TEXT="want to maximize overall utility" ID="ID_1958472525" CREATED="1379342684828" MODIFIED="1379342693208"/>
+<node TEXT="configurations, implementations, ... all fix a point along a utility curve" ID="ID_1791607388" CREATED="1379342693451" MODIFIED="1379342739577"/>
+<node TEXT="latency, throughput, other properties all have their utility curve" ID="ID_1892908609" CREATED="1379342742588" MODIFIED="1379342756473"/>
+<node TEXT="trade precision vs recall, etc." ID="ID_1969263244" CREATED="1379348474248" MODIFIED="1379348481190"/>
+</node>
+</node>
+</node>
+<node TEXT="Design Principles" POSITION="right" ID="ID_754097852" CREATED="1379402987248" MODIFIED="1379402991535">
+<edge COLOR="#0000ff"/>
+<node TEXT="modularity" ID="ID_994089561" CREATED="1379342924173" MODIFIED="1379342926378">
+<node TEXT="most fundamental way to deal with complexity" ID="ID_6597814" CREATED="1379342938333" MODIFIED="1379342945754">
+<node TEXT="divide and conquer" ID="ID_1003574776" CREATED="1379402028074" MODIFIED="1379402031798">
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="&quot;put things in subsystems&quot;" ID="ID_1173761325" CREATED="1379342955709" MODIFIED="1379342960362">
+<node TEXT="treat them as black boxes" ID="ID_1959166639" CREATED="1379342961038" MODIFIED="1379342964779"/>
+<node TEXT="continue recursively" ID="ID_57410128" CREATED="1379342980029" MODIFIED="1379342984843"/>
+</node>
+<node TEXT="examples" ID="ID_519247878" CREATED="1379343036990" MODIFIED="1379343039707">
+<node TEXT="replace individual components" ID="ID_996291036" CREATED="1379343040718" MODIFIED="1379343045483">
+<node TEXT="e.g., eniac vacuum tubes" ID="ID_26303996" CREATED="1379343046048" MODIFIED="1379343050843"/>
+<node TEXT="e.g., spare parts" ID="ID_381976747" CREATED="1379345809171" MODIFIED="1379345813072"/>
+</node>
+<node TEXT="computer industry" ID="ID_1225198428" CREATED="1379402485735" MODIFIED="1379402488841">
+<node TEXT="used to be one vendor supplying everything" ID="ID_1020707594" CREATED="1379402489545" MODIFIED="1379402500801"/>
+<node TEXT="nowadays, we have" ID="ID_115020141" CREATED="1379402500999" MODIFIED="1379402504330">
+<node TEXT="vendors for discs, CPUs, chips, GPUs" ID="ID_1574655136" CREATED="1379402504898" MODIFIED="1379402513883"/>
+<node TEXT="integrators such as Dell" ID="ID_1706927022" CREATED="1379402514709" MODIFIED="1379402519609"/>
+<node TEXT="software vendors" ID="ID_37645245" CREATED="1379402519842" MODIFIED="1379402526756"/>
+<node TEXT="plug-and-play compatibility" ID="ID_1898637113" CREATED="1379402527246" MODIFIED="1379402535145"/>
+</node>
+</node>
+<node TEXT="high-level languages" ID="ID_1476248306" CREATED="1379343055406" MODIFIED="1379343064027">
+<node TEXT="one command / routine encapsulates many assembly operations" ID="ID_1617474445" CREATED="1379343131423" MODIFIED="1379343147100"/>
+</node>
+<node TEXT="structured programming" ID="ID_570839123" CREATED="1379343070350" MODIFIED="1379343075851">
+<node TEXT="few basic constructs" ID="ID_683339924" CREATED="1379343082046" MODIFIED="1379343084955"/>
+<node TEXT="single-entry, single-exit blocks" ID="ID_1553454956" CREATED="1379343085166" MODIFIED="1379343091899"/>
+<node TEXT="no more arbitrary gotos" ID="ID_1225391544" CREATED="1379343104927" MODIFIED="1379343111308"/>
+</node>
+<node TEXT="preprocessors macros" ID="ID_975091504" CREATED="1379343186015" MODIFIED="1379343190556">
+<node TEXT="replace repetitive code" ID="ID_1939657075" CREATED="1379343193151" MODIFIED="1379343199101"/>
+<node TEXT="changes can be done in a single location" ID="ID_1229834718" CREATED="1379343199487" MODIFIED="1379343207805"/>
+</node>
+<node TEXT="object-oriented programming" ID="ID_1243856502" CREATED="1379343217088" MODIFIED="1379343222159"/>
+<node TEXT="virtualization" ID="ID_1301358920" CREATED="1379343239120" MODIFIED="1379343242413">
+<node TEXT="few physical machines run many virtual machines" ID="ID_1490143435" CREATED="1379343248592" MODIFIED="1379343266685"/>
+<node TEXT="reduced operating/management costs" ID="ID_686158532" CREATED="1379343271346" MODIFIED="1379343278414"/>
+<node TEXT="VMs can be replicated, migrated, ..." ID="ID_300324339" CREATED="1379343280368" MODIFIED="1379343286861"/>
+</node>
+<node TEXT="outside CS" ID="ID_1047279238" CREATED="1379343306946" MODIFIED="1379343313213">
+<node TEXT="cells in a biological organism" ID="ID_503808056" CREATED="1379343313840" MODIFIED="1379343319645"/>
+<node TEXT="genes as unit of evolution" ID="ID_272179729" CREATED="1379343322608" MODIFIED="1379343328205"/>
+<node TEXT="division of labor in industry" ID="ID_938247041" CREATED="1379343331184" MODIFIED="1379343336109">
+<node TEXT="competition: one competitor can be substituted for another" ID="ID_1137955474" CREATED="1379343414353" MODIFIED="1379343434126"/>
+</node>
+<node TEXT="IKEA furniture" ID="ID_701544086" CREATED="1379343342496" MODIFIED="1379343345438"/>
+</node>
+</node>
+<node TEXT="can replace a module by another one" ID="ID_452938228" CREATED="1379343454178" MODIFIED="1379343462734">
+<node TEXT="but hard to change the modularity itself" ID="ID_1666704448" CREATED="1379402150130" MODIFIED="1379402161408">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node TEXT="unyielding foundations" ID="ID_1663967426" CREATED="1379402165016" MODIFIED="1379402170093">
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="isolate scope of analysis" ID="ID_1718910805" CREATED="1379343464370" MODIFIED="1379343470110"/>
+<node TEXT="can be enforced?" ID="ID_1956504149" CREATED="1379402572529" MODIFIED="1379402575868">
+<node TEXT="e.g. through virtualization" ID="ID_1385169916" CREATED="1379402576692" MODIFIED="1379402582576"/>
+<node TEXT="not in unsafe languages..." ID="ID_593994580" CREATED="1379402582791" MODIFIED="1379402599553"/>
+</node>
+</node>
+<node TEXT="abstraction" ID="ID_261591609" CREATED="1379343673523" MODIFIED="1379343677808">
+<node TEXT="define interfaces of &quot;black box&quot; modules" ID="ID_1673419633" CREATED="1379343720483" MODIFIED="1379343731281"/>
+<node TEXT="hides the &quot;how&quot;, specifies the &quot;what&quot;" ID="ID_1434857862" CREATED="1379343735139" MODIFIED="1379343745521">
+<node TEXT="separate interface from internals" ID="ID_1033861202" CREATED="1379402257847" MODIFIED="1379402280807"/>
+</node>
+<node TEXT="examples" ID="ID_1147732500" CREATED="1379343756308" MODIFIED="1379343758593">
+<node TEXT="virtual address space" ID="ID_1839934329" CREATED="1379343759220" MODIFIED="1379343762513">
+<node TEXT="flexibility" ID="ID_1698289399" CREATED="1379343784660" MODIFIED="1379343787457">
+<node TEXT="map foreign code into your address space" ID="ID_1369435608" CREATED="1379343790580" MODIFIED="1379343797826"/>
+</node>
+<node TEXT="isolation" ID="ID_96077103" CREATED="1379343787684" MODIFIED="1379343789201"/>
+</node>
+<node TEXT="processes" ID="ID_319209589" CREATED="1379343763556" MODIFIED="1379343766017">
+<node TEXT="associates with code an address space" ID="ID_806768845" CREATED="1379343802980" MODIFIED="1379343812402"/>
+<node TEXT="processes can interact using signals, shared memory..." ID="ID_1714247776" CREATED="1379343812916" MODIFIED="1379343826657"/>
+</node>
+<node TEXT="pipes" ID="ID_758064459" CREATED="1379343766228" MODIFIED="1379343767345">
+<node TEXT="unix philosophy: many small tools" ID="ID_107040398" CREATED="1379343851990" MODIFIED="1379343859058"/>
+<node TEXT="tools connected using pipes" ID="ID_1077691016" CREATED="1379343859252" MODIFIED="1379343863985"/>
+</node>
+<node TEXT="the file system" ID="ID_995162156" CREATED="1379343767572" MODIFIED="1379343771153"/>
+<node TEXT="in programming languages" ID="ID_1256223742" CREATED="1379343884917" MODIFIED="1379343888210">
+<node TEXT="subroutines" ID="ID_254297004" CREATED="1379343888820" MODIFIED="1379343890626"/>
+<node TEXT="lambda functions" ID="ID_1455910532" CREATED="1379343897221" MODIFIED="1379343900898"/>
+<node TEXT="abstract data types" ID="ID_1449590658" CREATED="1379343901141" MODIFIED="1379343905410"/>
+<node TEXT="interfaces vs duck typing" ID="ID_1934280554" CREATED="1379343945685" MODIFIED="1379343950098"/>
+</node>
+</node>
+<node TEXT="specify desired behavior" ID="ID_627296841" CREATED="1379344015734" MODIFIED="1379344021315"/>
+<node TEXT="remove undesired behavior" ID="ID_1545907587" CREATED="1379344021509" MODIFIED="1379344025379">
+<node TEXT="abstractions can be leaky" ID="ID_1905748040" CREATED="1379404149766" MODIFIED="1379404158127">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+<node TEXT="e.g., addition" ID="ID_125840064" CREATED="1379404159248" MODIFIED="1379404162064">
+<node TEXT="models mathematical addition" ID="ID_120389251" CREATED="1379404162552" MODIFIED="1379404173199"/>
+<node TEXT="unless there are overflows" ID="ID_1719888665" CREATED="1379404173390" MODIFIED="1379404178120"/>
+</node>
+</node>
+<node TEXT="robustness principle" ID="ID_1157635972" CREATED="1379402617037" MODIFIED="1379402620631">
+<node TEXT="be tolerant for input, strict for output" ID="ID_515780634" CREATED="1379402621338" MODIFIED="1379402628041">
+<font BOLD="true"/>
+</node>
+<node TEXT="actually, it might be better to fail early..." ID="ID_1535368672" CREATED="1379402637196" MODIFIED="1379402647060"/>
+</node>
+</node>
+<node TEXT="layering" ID="ID_19959003" CREATED="1379402998714" MODIFIED="1379403001128">
+<node TEXT="divide a system into layers" ID="ID_1580462742" CREATED="1379403005466" MODIFIED="1379403012517">
+<node TEXT="each layer is complete" ID="ID_154614490" CREATED="1379403013136" MODIFIED="1379403016607"/>
+<node TEXT="modules interact only within the current layer..." ID="ID_292944687" CREATED="1379403016839" MODIFIED="1379403024513"/>
+<node TEXT="... and with the layer above and below" ID="ID_822589324" CREATED="1379403024961" MODIFIED="1379403030745"/>
+<node TEXT="&#x21d2; restricts possible interconnections" ID="ID_1187884437" CREATED="1379403031008" MODIFIED="1379403040965"/>
+</node>
+<node TEXT="examples" ID="ID_1299237318" CREATED="1379403050443" MODIFIED="1379403051807">
+<node TEXT="intermediate languages for compilers" ID="ID_1572176641" CREATED="1379403052567" MODIFIED="1379403064459"/>
+<node TEXT="the network stack" ID="ID_1725876217" CREATED="1379403069123" MODIFIED="1379403071861"/>
+<node TEXT="NAND to Tetris" ID="ID_253783824" CREATED="1379403087283" MODIFIED="1379403091997"/>
+</node>
+</node>
+<node TEXT="hierarchy" ID="ID_496680919" CREATED="1379403191626" MODIFIED="1379403194092">
+<node TEXT="systems composed of subsystems composed of ..." ID="ID_539320494" CREATED="1379403203403" MODIFIED="1379403212778"/>
+<node TEXT="each subsystem is self-contained" ID="ID_1745632735" CREATED="1379403216810" MODIFIED="1379403222018"/>
+<node TEXT="constrains interaction" ID="ID_975739315" CREATED="1379403286151" MODIFIED="1379403290168">
+<node TEXT="components can only interact within a subsystem" ID="ID_45070958" CREATED="1379403290848" MODIFIED="1379403298237"/>
+<node TEXT="similar to layering..." ID="ID_1715951958" CREATED="1379403298461" MODIFIED="1379403303927"/>
+<node TEXT="... but forms a tree shape, not a linear shape" ID="ID_499315404" CREATED="1379403304398" MODIFIED="1379403310408"/>
+</node>
+<node TEXT="examples" ID="ID_1360405060" CREATED="1379403238352" MODIFIED="1379403239886">
+<node TEXT="large corporations" ID="ID_1979553442" CREATED="1379403240343" MODIFIED="1379403243735"/>
+<node TEXT="armies" ID="ID_1682520188" CREATED="1379403244006" MODIFIED="1379403245987"/>
+</node>
+</node>
+<node TEXT="naming" ID="ID_709949992" CREATED="1379403372395" MODIFIED="1379403373722">
+<node TEXT="idea" ID="ID_1455230757" CREATED="1379403374372" MODIFIED="1379403378430">
+<node TEXT="modularity, abstraction split things into components" ID="ID_516248330" CREATED="1379403378864" MODIFIED="1379403394215"/>
+<node TEXT="layering, hierarchy organize connections between components" ID="ID_1813487875" CREATED="1379403394415" MODIFIED="1379403407135"/>
+<node TEXT="naming required to identify/find components" ID="ID_22990798" CREATED="1379403408830" MODIFIED="1379403417044"/>
+</node>
+<node TEXT="goals" ID="ID_424666195" CREATED="1379403429403" MODIFIED="1379403430565">
+<node TEXT="postpone decisions" ID="ID_1291915311" CREATED="1379403431101" MODIFIED="1379403435084">
+<node TEXT="late binding" ID="ID_1240303375" CREATED="1379403435502" MODIFIED="1379403437154"/>
+</node>
+<node TEXT="easy replacement" ID="ID_1427892436" CREATED="1379403438508" MODIFIED="1379403442337"/>
+</node>
+<node TEXT="examples" ID="ID_407713745" CREATED="1379403455015" MODIFIED="1379403456212">
+<node TEXT="load java classes by name" ID="ID_1129235748" CREATED="1379403457628" MODIFIED="1379403466085"/>
+<node TEXT="bus addresses of a hardware component" ID="ID_1886140142" CREATED="1379403467247" MODIFIED="1379403472833"/>
+</node>
+<node TEXT="a form of indirection" ID="ID_1834454687" CREATED="1379403539766" MODIFIED="1379403544113">
+<node TEXT="decouples modules" ID="ID_1886014441" CREATED="1379403544985" MODIFIED="1379403547552"/>
+</node>
+</node>
+<node TEXT="iteration" ID="ID_1299263869" CREATED="1379404991341" MODIFIED="1379404993303">
+<node TEXT="plan to throw one away" ID="ID_1639326996" CREATED="1379404993856" MODIFIED="1379405002341">
+<font BOLD="true"/>
+<node TEXT="in other words, design for iteration" ID="ID_780234212" CREATED="1379405101261" MODIFIED="1379405108986"/>
+</node>
+<node TEXT="be agile" ID="ID_1423393424" CREATED="1379405008158" MODIFIED="1379405010449">
+<node TEXT="take small steps" ID="ID_1421434776" CREATED="1379405127810" MODIFIED="1379405130934">
+<node TEXT="discover bad ideas quickly" ID="ID_1004448466" CREATED="1379405142571" MODIFIED="1379405147025"/>
+</node>
+<node TEXT="don&apos;t rush" ID="ID_1060639188" CREATED="1379405131174" MODIFIED="1379405133902">
+<node TEXT="even agile development needs planning" ID="ID_887374717" CREATED="1379405173845" MODIFIED="1379405180855"/>
+</node>
+<node TEXT="get feedback" ID="ID_1259187605" CREATED="1379405181828" MODIFIED="1379405183751">
+<node TEXT="have a customer on-site" ID="ID_401951025" CREATED="1379405184616" MODIFIED="1379405190719"/>
+<node TEXT="incentivize users, testers, ..." ID="ID_1664831460" CREATED="1379405200877" MODIFIED="1379405209751"/>
+</node>
+<node TEXT="study failures" ID="ID_437967571" CREATED="1379405237377" MODIFIED="1379405239577">
+<node TEXT="do not assign blame" ID="ID_786771035" CREATED="1379405259161" MODIFIED="1379405262748">
+<node TEXT="&#x2192; facebook" ID="ID_859686299" CREATED="1379405263686" MODIFIED="1379405269547"/>
+</node>
+<node TEXT="see failures as opportunities for improvement" ID="ID_632803565" CREATED="1379405274928" MODIFIED="1379405282166"/>
+</node>
+<node TEXT="don&apos;t loose conceptual integrity" ID="ID_1514051862" CREATED="1379405356196" MODIFIED="1379405365777">
+<icon BUILTIN="messagebox_warning"/>
+<node TEXT="foundations should stand across iterations" ID="ID_1179444005" CREATED="1379405384597" MODIFIED="1379405395421"/>
+<node TEXT="changing modularity is hard" ID="ID_813343896" CREATED="1379405396557" MODIFIED="1379405400354"/>
+</node>
+<node TEXT="second system effect" ID="ID_218640622" CREATED="1379405465344" MODIFIED="1379405474424">
+<icon BUILTIN="messagebox_warning"/>
+<node TEXT="if the first system is successful, don&apos;t become overconfident" ID="ID_360481150" CREATED="1379405475583" MODIFIED="1379405486233"/>
+<node TEXT="many new feature requests will have arised" ID="ID_1832464552" CREATED="1379405493158" MODIFIED="1379405505577"/>
+<node TEXT="try to keep the simplicity" ID="ID_231855568" CREATED="1379405486431" MODIFIED="1379405492464"/>
+</node>
+</node>
+<node TEXT="method" ID="ID_327571683" CREATED="1379405050928" MODIFIED="1379405052799">
+<node TEXT="have a working system available at all times" ID="ID_958400861" CREATED="1379405053480" MODIFIED="1379405061584"/>
+<node TEXT="gradually incorporate new requirements" ID="ID_1711424943" CREATED="1379405061783" MODIFIED="1379405068525"/>
+</node>
+</node>
+<node TEXT="simplification" ID="ID_314141659" CREATED="1379405700226" MODIFIED="1379405703537">
+<node TEXT="adopt sweeping simplification" ID="ID_1617295552" CREATED="1379405704426" MODIFIED="1379405710929">
+<font BOLD="true"/>
+</node>
+<node TEXT="be able to say &quot;no&quot;" ID="ID_60074087" CREATED="1379405716984" MODIFIED="1379405724055">
+<node TEXT="&quot;no, this will make it too complicated&quot;" ID="ID_279805710" CREATED="1379405724722" MODIFIED="1379405733906"/>
+</node>
+</node>
+</node>
+<node TEXT="Papers" POSITION="left" ID="ID_1384921320" CREATED="1379576056086" MODIFIED="1379576058096">
+<edge COLOR="#ff00ff"/>
+<node TEXT="Exokernel" ID="ID_422480442" CREATED="1379576059602" MODIFIED="1379576062751">
+<node TEXT="idea" ID="ID_1342533709" CREATED="1379576079937" MODIFIED="1379576081647">
+<node TEXT="takes microkernels to the limit" ID="ID_995909910" CREATED="1379576082689" MODIFIED="1379576087967"/>
+<node TEXT="separate protection from management" ID="ID_350178979" CREATED="1379576403796" MODIFIED="1379576413299">
+<font BOLD="true"/>
+<node TEXT="only care about protection of resources" ID="ID_1528369106" CREATED="1379576088209" MODIFIED="1379576095455"/>
+<node TEXT="application-level resource management" ID="ID_1411059723" CREATED="1379576264899" MODIFIED="1379576414355">
+<font BOLD="false"/>
+</node>
+</node>
+</node>
+<node TEXT="interface" ID="ID_1855149635" CREATED="1379576198418" MODIFIED="1379576200240">
+<node TEXT="traditional" ID="ID_813359158" CREATED="1379576200978" MODIFIED="1379576203392">
+<node TEXT="OS provides abstractions" ID="ID_1769455427" CREATED="1379576204034" MODIFIED="1379576211040"/>
+<node TEXT="processes" ID="ID_885179691" CREATED="1379576211266" MODIFIED="1379576212992"/>
+<node TEXT="IPC" ID="ID_306316336" CREATED="1379576213154" MODIFIED="1379576218848"/>
+<node TEXT="virtual memory" ID="ID_19478336" CREATED="1379576219042" MODIFIED="1379576221792"/>
+<node TEXT="file system" ID="ID_561917502" CREATED="1379576231106" MODIFIED="1379577440617"/>
+<node TEXT="sockets" ID="ID_1768397829" CREATED="1379577427323" MODIFIED="1379577430873"/>
+</node>
+<node TEXT="exokernel" ID="ID_523447355" CREATED="1379576368067" MODIFIED="1379576370689">
+<node TEXT="lower-level primitives" ID="ID_1601610709" CREATED="1379576371603" MODIFIED="1379576376465"/>
+<node TEXT="can be implemented efficiently" ID="ID_280608494" CREATED="1379576376675" MODIFIED="1379576381137"/>
+<node TEXT="exports almost bare hardware resources" ID="ID_1859481810" CREATED="1379576491156" MODIFIED="1379576502498"/>
+</node>
+</node>
+<node TEXT="protection" ID="ID_1764586282" CREATED="1379579587307" MODIFIED="1379579589353">
+<node TEXT="goal" ID="ID_1589966132" CREATED="1379579591275" MODIFIED="1379579600137">
+<node TEXT="track resource ownership" ID="ID_1362997560" CREATED="1379579600828" MODIFIED="1379579605497">
+<node TEXT="at sufficiently fine granularity" ID="ID_1437505402" CREATED="1379579674028" MODIFIED="1379579679321"/>
+</node>
+<node TEXT="ensure libOSs only access owned resources" ID="ID_689644557" CREATED="1379579605707" MODIFIED="1379579618985"/>
+<node TEXT="revoke access if needed" ID="ID_1720222871" CREATED="1379579619180" MODIFIED="1379579623945"/>
+</node>
+<node TEXT="mechanism" ID="ID_565705709" CREATED="1379580037247" MODIFIED="1379580039772">
+<node TEXT="secure binding" ID="ID_744798791" CREATED="1379580040623" MODIFIED="1379580042972">
+<node TEXT="idea" ID="ID_1565583398" CREATED="1379580129472" MODIFIED="1379580130877">
+<node TEXT="separates protection from authorization" ID="ID_232966876" CREATED="1379580043759" MODIFIED="1379580058748"/>
+<node TEXT="authorization happens at bind time" ID="ID_357386993" CREATED="1379580059903" MODIFIED="1379580067404"/>
+<node TEXT="protection happens at use time" ID="ID_676714929" CREATED="1379580067583" MODIFIED="1379580075869"/>
+<node TEXT="protection is cheap because only some capability (i.e., result of a binding) must be checked" ID="ID_260228531" CREATED="1379580076143" MODIFIED="1379580107629"/>
+</node>
+<node TEXT="hardware mechanisms" ID="ID_1146932386" CREATED="1379580136064" MODIFIED="1379580145533">
+<node TEXT="e.g., page table" ID="ID_768757286" CREATED="1379580205984" MODIFIED="1379580209374"/>
+<node TEXT="e.g., creating a TLB entry" ID="ID_563178330" CREATED="1379580216673" MODIFIED="1379580228398"/>
+</node>
+<node TEXT="software caching" ID="ID_1050954561" CREATED="1379580146688" MODIFIED="1379580150621">
+<node TEXT="e.g., a large software TLB" ID="ID_1680442174" CREATED="1379580338977" MODIFIED="1379580348591"/>
+</node>
+<node TEXT="downloading apps" ID="ID_461377346" CREATED="1379580150800" MODIFIED="1379580155229">
+<node TEXT="network packet filter" ID="ID_1948130751" CREATED="1379580157312" MODIFIED="1379580164669"/>
+<node TEXT="application-specific safe handlers" ID="ID_1225164003" CREATED="1379580705908" MODIFIED="1379580712289">
+<node TEXT="e.g., to send ACKs immediately (before receiving libOS is scheduled)" ID="ID_438977563" CREATED="1379580712980" MODIFIED="1379580730289"/>
+</node>
+<node TEXT="verified at binding time" ID="ID_1405284949" CREATED="1379580164880" MODIFIED="1379580170109"/>
+<node TEXT="executed quickly on every new packet at use time" ID="ID_1660790872" CREATED="1379580170320" MODIFIED="1379580179629"/>
+<node TEXT="&#x2192; proof-carrying code" ID="ID_999633276" CREATED="1379580367985" MODIFIED="1379580374560"/>
+</node>
+</node>
+<node TEXT="visible revocation" ID="ID_658763239" CREATED="1379580914150" MODIFIED="1379580917763">
+<node TEXT="apps (libOSs) are notified when revocation happens" ID="ID_1904397687" CREATED="1379580918550" MODIFIED="1379580938243">
+<node TEXT="e.g., when a page should be swapped" ID="ID_233714035" CREATED="1379580939110" MODIFIED="1379580944163"/>
+</node>
+<node TEXT="cooperative" ID="ID_841448339" CREATED="1379580945654" MODIFIED="1379580949171">
+<node TEXT="&quot;please free a page&quot;" ID="ID_223176759" CREATED="1379580949877" MODIFIED="1379580953603"/>
+</node>
+<node TEXT="imperative" ID="ID_1074043975" CREATED="1379580954566" MODIFIED="1379580959859">
+<node TEXT="&quot;free a page within 50 &#x3bc;s&quot;" ID="ID_1848017194" CREATED="1379580962166" MODIFIED="1379580972483"/>
+</node>
+</node>
+<node TEXT="abort protocol" ID="ID_1852381766" CREATED="1379580985510" MODIFIED="1379580988403">
+<node TEXT="to forcibly revoke resources from a libOS" ID="ID_81650376" CREATED="1379580990582" MODIFIED="1379581005466"/>
+<node TEXT="libOS is not killed, but notified" ID="ID_337944699" CREATED="1379581098375" MODIFIED="1379581111716"/>
+<node TEXT="libOS can designate which resources should be revoked first" ID="ID_698737337" CREATED="1379581113447" MODIFIED="1379581131461"/>
+<node TEXT="guaranteed minimal number of resources that will never be revoked" ID="ID_1264288911" CREATED="1379581135688" MODIFIED="1379581146612">
+<node TEXT="e.g., for libOS page tables" ID="ID_194538747" CREATED="1379581153656" MODIFIED="1379581158837"/>
+</node>
+</node>
+</node>
+<node TEXT="resources" ID="ID_1060004305" CREATED="1379577554636" MODIFIED="1379577556793">
+<node TEXT="CPU time" ID="ID_1258463916" CREATED="1379577557404" MODIFIED="1379577560649">
+<node TEXT="processes can allocate time slices" ID="ID_1052513289" CREATED="1379577561516" MODIFIED="1379577571081"/>
+<node TEXT="processes can yield unused remaining time to others" ID="ID_1390383092" CREATED="1379577571308" MODIFIED="1379577585530"/>
+<node TEXT="OS notifies processes" ID="ID_1939616403" CREATED="1379577596397" MODIFIED="1379577604826">
+<node TEXT="interrupts" ID="ID_1920126956" CREATED="1379577605549" MODIFIED="1379577607530"/>
+<node TEXT="hardware exceptions" ID="ID_1379017356" CREATED="1379577608893" MODIFIED="1379577613530"/>
+<node TEXT="begin/end of time slice" ID="ID_202117815" CREATED="1379577613756" MODIFIED="1379577618314"/>
+</node>
+<node TEXT="programs taking too long are penalized on future slices" ID="ID_1235055137" CREATED="1379577629981" MODIFIED="1379577640442"/>
+<node TEXT="OS exports privileged instructions as system calls" ID="ID_1088083304" CREATED="1379579724540" MODIFIED="1379579734587"/>
+</node>
+<node TEXT="memory" ID="ID_1608549312" CREATED="1379577650077" MODIFIED="1379577654794">
+<node TEXT="kernel allocates pages" ID="ID_1057493019" CREATED="1379577656733" MODIFIED="1379577671594"/>
+<node TEXT="kernel controls TLB" ID="ID_1270905330" CREATED="1379577661869" MODIFIED="1379577669370"/>
+<node TEXT="sharing" ID="ID_89176576" CREATED="1379577681629" MODIFIED="1379577683194">
+<node TEXT="programs can send capabilities to each other, to access a foreign page" ID="ID_363139911" CREATED="1379577684285" MODIFIED="1379577697723"/>
+<node TEXT="kernel does capability-based access control" ID="ID_1812669017" CREATED="1379577709005" MODIFIED="1379577728363"/>
+</node>
+</node>
+<node TEXT="disk" ID="ID_1880477849" CREATED="1379577739757" MODIFIED="1379577741611">
+<node TEXT="app can request disk blocks by physical address" ID="ID_646991752" CREATED="1379577743022" MODIFIED="1379577761995"/>
+</node>
+<node TEXT="network" ID="ID_639700884" CREATED="1379577809790" MODIFIED="1379577811643">
+<node TEXT="programmable packet filter" ID="ID_1590162852" CREATED="1379577812430" MODIFIED="1379577818699"/>
+<node TEXT="specified as byte code" ID="ID_1779422955" CREATED="1379577818910" MODIFIED="1379577825788">
+<node TEXT="easy to verify" ID="ID_1791936644" CREATED="1379577826430" MODIFIED="1379577837612"/>
+</node>
+</node>
+<node TEXT="frame buffer?" ID="ID_1016038918" CREATED="1379580272289" MODIFIED="1379580277166">
+<node TEXT="give parts of screen to different libOSs?" ID="ID_429370164" CREATED="1379580278129" MODIFIED="1379580287806"/>
+<node TEXT="&quot;ownership tag&quot; for pixels in SGI GPUs" ID="ID_485972847" CREATED="1379580288049" MODIFIED="1379580302942"/>
+</node>
+</node>
+</node>
+<node TEXT="principles" ID="ID_520659045" CREATED="1379577255770" MODIFIED="1379577258743">
+<node TEXT="end-to-end" ID="ID_1755625933" CREATED="1379577259418" MODIFIED="1379577262823">
+<node TEXT="the intermediate parts should be as dumb as possible" ID="ID_519265458" CREATED="1379577275466" MODIFIED="1379577285272"/>
+<node TEXT="appliciations know better what their needs are, therefore they should be given as much control as possible" ID="ID_1519680482" CREATED="1379578775733" MODIFIED="1379578791907"/>
+</node>
+<node TEXT="simplicity for speed" ID="ID_1856022614" CREATED="1379578898758" MODIFIED="1379578902260">
+<node TEXT="as in RISC" ID="ID_1355413239" CREATED="1379578903222" MODIFIED="1379578907412"/>
+<node TEXT="as in Butler Lampson&apos;s hints" ID="ID_1594934574" CREATED="1379578913639" MODIFIED="1379578923268"/>
+</node>
+<node TEXT="naming" ID="ID_1346701757" CREATED="1379579788829" MODIFIED="1379579790378">
+<node TEXT="exokernel exports physical names (addresses) of resources" ID="ID_1180242972" CREATED="1379579791277" MODIFIED="1379579804874"/>
+</node>
+<node TEXT="layering" ID="ID_770272317" CREATED="1379579195145" MODIFIED="1379579197430">
+<node TEXT="in principle, splits the conventional OS into exokernel+library OS" ID="ID_733582065" CREATED="1379579198409" MODIFIED="1379579379881"/>
+<node TEXT="when seen this way, actually reduces complexity" ID="ID_1508885371" CREATED="1379579213193" MODIFIED="1379579220630"/>
+<node TEXT="most &quot;regular&quot; apps will use a standard libOS (e.g., POSIX-compatible)" ID="ID_1128686912" CREATED="1379579224505" MODIFIED="1379579247542"/>
+</node>
+</node>
+<node TEXT="examples" ID="ID_958140753" CREATED="1379577377211" MODIFIED="1379577378600">
+<node TEXT="cheetah webserver" ID="ID_34344065" CREATED="1379577379339" MODIFIED="1379577382552">
+<node TEXT="stores preformatted IP packages to disk" ID="ID_1977687261" CREATED="1379577383179" MODIFIED="1379577390216"/>
+</node>
+</node>
+<node TEXT="questions" ID="ID_268615420" CREATED="1379576503572" MODIFIED="1379576506082">
+<node TEXT="what about fine-grained sharing?" ID="ID_1900353611" CREATED="1379576506868" MODIFIED="1379576512866">
+<node TEXT="there is going to be duplication in LibOSs" ID="ID_1343372560" CREATED="1379578976055" MODIFIED="1379578985588"/>
+<node TEXT="granularity of allocated resources might be too large (e.g., disk partitions vs files)" ID="ID_571600175" CREATED="1379578993479" MODIFIED="1379579016804"/>
+</node>
+<node TEXT="is it worth it?" ID="ID_1723462894" CREATED="1379579067655" MODIFIED="1379579072229">
+<node TEXT="in principle, this moves complexity to the app..." ID="ID_59411243" CREATED="1379579028279" MODIFIED="1379579047669"/>
+<node TEXT="When is the added flexibility and performance worth it?" ID="ID_1009728082" CREATED="1379577062985" MODIFIED="1379577073462"/>
+</node>
+<node TEXT="Why do we need the multiplexing?" ID="ID_523959903" CREATED="1379577298810" MODIFIED="1379577309032"/>
+<node TEXT="can the libOS enforce protection?" ID="ID_549648636" CREATED="1379579395802" MODIFIED="1379579461930">
+<node TEXT="are there sufficient virtualization features?" ID="ID_1328329483" CREATED="1379579406570" MODIFIED="1379579426103"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</map>
