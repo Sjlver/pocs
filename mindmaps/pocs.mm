@@ -717,10 +717,17 @@
 <node TEXT="in principle, this moves complexity to the app..." ID="ID_59411243" CREATED="1379579028279" MODIFIED="1379579047669"/>
 <node TEXT="When is the added flexibility and performance worth it?" ID="ID_1009728082" CREATED="1379577062985" MODIFIED="1379577073462"/>
 </node>
-<node TEXT="Why do we need the multiplexing?" ID="ID_523959903" CREATED="1379577298810" MODIFIED="1379577309032"/>
+<node TEXT="Why do we need the multiplexing?" ID="ID_523959903" CREATED="1379577298810" MODIFIED="1379577309032">
+<node TEXT="e.g., multi-tenant cloud environments" ID="ID_880467968" CREATED="1379590810892" MODIFIED="1379590822764"/>
+</node>
 <node TEXT="can the libOS enforce protection?" ID="ID_549648636" CREATED="1379579395802" MODIFIED="1379579461930">
 <node TEXT="are there sufficient virtualization features?" ID="ID_1328329483" CREATED="1379579406570" MODIFIED="1379579426103"/>
 </node>
+</node>
+<node TEXT="alternatives?" ID="ID_647727202" CREATED="1379591814159" MODIFIED="1379591818330">
+<node TEXT="single address space operating systems" ID="ID_400791051" CREATED="1379591819507" MODIFIED="1379591845114"/>
+<node TEXT="more powerful hardware with task switching, etc." ID="ID_195146201" CREATED="1379591848566" MODIFIED="1379591859563"/>
+<node TEXT="static partitioning of resources" ID="ID_1871254861" CREATED="1379591867140" MODIFIED="1379591893661"/>
 </node>
 </node>
 <node TEXT="Internet Protocols" ID="ID_1839291947" CREATED="1379584138703" MODIFIED="1379584142891">
@@ -798,10 +805,11 @@
 <node TEXT="1% loss rate is &quot;low enough&quot;... grins" ID="ID_725174087" CREATED="1379585721626" MODIFIED="1379585979514">
 <icon BUILTIN="ksmiletris"/>
 </node>
-<node TEXT="no one has yet wriiten a packet simulator" ID="ID_1023789882" CREATED="1379585982717" MODIFIED="1379585990746"/>
+<node TEXT="no one has yet written a packet simulator" ID="ID_1023789882" CREATED="1379585982717" MODIFIED="1379594623729"/>
 <node TEXT="paper was written before BGP" ID="ID_344189177" CREATED="1379585990988" MODIFIED="1379586004220">
 <icon BUILTIN="messagebox_warning"/>
 </node>
+<node TEXT="when this paper was written, the Internet had 10&apos;000 - 100&apos;000 nodes" ID="ID_918857151" CREATED="1379594602526" MODIFIED="1379594802537"/>
 </node>
 <node TEXT="principles" ID="ID_1436311128" CREATED="1379586030397" MODIFIED="1379586032154">
 <node TEXT="end-to-end" ID="ID_1450591993" CREATED="1379586032814" MODIFIED="1379586035610"/>
@@ -811,6 +819,14 @@
 <node TEXT="the datagram" ID="ID_132325428" CREATED="1379586470128" MODIFIED="1379586476945">
 <font ITALIC="true"/>
 <node TEXT="...if that can be called a principle" ID="ID_838080933" CREATED="1379586478480" MODIFIED="1379586484781"/>
+</node>
+</node>
+<node TEXT="questions/discussion" ID="ID_1039229634" CREATED="1379595460545" MODIFIED="1379595483433">
+<node TEXT="What made the Internet succeed till today?" ID="ID_652221371" CREATED="1379595462517" MODIFIED="1379595473915"/>
+<node TEXT="Is the Internet today the same as in 1989?" ID="ID_606699517" CREATED="1379595502358" MODIFIED="1379595510589"/>
+<node TEXT="&quot;systems thinking&quot;" ID="ID_1724909479" CREATED="1379595512939" MODIFIED="1379595524952">
+<node TEXT="it&apos;s hard to believe that somebody actually built the Internet..." ID="ID_1304217579" CREATED="1379595525967" MODIFIED="1379595545035"/>
+<node TEXT="there is this mindset of building such systems" ID="ID_1664792994" CREATED="1379595545257" MODIFIED="1379595567941"/>
 </node>
 </node>
 </node>
