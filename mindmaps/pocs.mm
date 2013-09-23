@@ -745,6 +745,50 @@
 </node>
 </node>
 </node>
+<node TEXT="enforced layering" ID="ID_1522228955" CREATED="1379945108244" MODIFIED="1379945111070">
+<node TEXT="clients and servers" ID="ID_1745841994" CREATED="1379945111614" MODIFIED="1379945115883">
+<node TEXT="communicate only through messages" ID="ID_250073405" CREATED="1379945116412" MODIFIED="1379945127316"/>
+<node TEXT="messages provide a clear, enforceable interface" ID="ID_764857300" CREATED="1379946373250" MODIFIED="1379946381293"/>
+<node TEXT="messages are the only way to propagate errors" ID="ID_905420450" CREATED="1379946390173" MODIFIED="1379946399356"/>
+<node TEXT="attacker can only use messages" ID="ID_31190958" CREATED="1379946402806" MODIFIED="1379946410686"/>
+</node>
+<node TEXT="advantages" ID="ID_209532543" CREATED="1379947075145" MODIFIED="1379947077033">
+<node TEXT="no shared state between client and server" ID="ID_1987738430" CREATED="1379947077826" MODIFIED="1379947083746"/>
+<node TEXT="possibility to check message formats, integrity, validity" ID="ID_1031966639" CREATED="1379947115446" MODIFIED="1379947131821"/>
+<node TEXT="client is defensive, uses time-outs, ..." ID="ID_1948178992" CREATED="1379947156537" MODIFIED="1379947165396"/>
+<node TEXT="encourages explicit interfaces" ID="ID_1635587917" CREATED="1379947175650" MODIFIED="1379947179850"/>
+</node>
+<node TEXT="peer-to-peer vs trusted intermediaries" ID="ID_845934756" CREATED="1379947480414" MODIFIED="1379947488368"/>
+<node TEXT="remote procedure calls" ID="ID_233755263" CREATED="1379948083056" MODIFIED="1379948086337">
+<node TEXT="goal is to look like regular procedure calls" ID="ID_1382105820" CREATED="1379948086962" MODIFIED="1379948095131"/>
+<node TEXT="programming language stubs can often be automatically generated from interface specs" ID="ID_1726151352" CREATED="1379948095371" MODIFIED="1379948110926"/>
+<node TEXT="differences to regular procedure calls" ID="ID_6021166" CREATED="1379948142232" MODIFIED="1379948152455">
+<node TEXT="can fail in new ways" ID="ID_404858067" CREATED="1379948152967" MODIFIED="1379948155770"/>
+<node TEXT="take longer to execute" ID="ID_1679118909" CREATED="1379948155938" MODIFIED="1379948164273">
+<node TEXT="caching becomes attractive" ID="ID_708824225" CREATED="1379948322824" MODIFIED="1379948331375"/>
+</node>
+</node>
+<node TEXT="failure semantics" ID="ID_1658248168" CREATED="1379948235255" MODIFIED="1379948238695">
+<node TEXT="at least once" ID="ID_1254610990" CREATED="1379948239337" MODIFIED="1379948241322">
+<node TEXT="request is retried several times" ID="ID_1246240617" CREATED="1379948241874" MODIFIED="1379948248716"/>
+</node>
+<node TEXT="at most once" ID="ID_270321236" CREATED="1379948251211" MODIFIED="1379948252879">
+<node TEXT="request is not retried" ID="ID_1319133575" CREATED="1379948253512" MODIFIED="1379948256711"/>
+<node TEXT="&#x21d2; for requests that have side effects" ID="ID_946435291" CREATED="1379948256959" MODIFIED="1379948266987"/>
+</node>
+</node>
+</node>
+<node TEXT="communicating through an intermediary" ID="ID_284516149" CREATED="1379948372148" MODIFIED="1379948377904">
+<node TEXT="e.g., email" ID="ID_1484594169" CREATED="1379948378481" MODIFIED="1379948381376"/>
+<node TEXT="push or pull?" ID="ID_1127525669" CREATED="1379948384833" MODIFIED="1379948386937"/>
+</node>
+<node TEXT="modularity in programming languages is *soft*" ID="ID_1456746035" CREATED="1379946635727" MODIFIED="1379946646767">
+<node TEXT="e.g., infinite loops in one module affect other modules" ID="ID_760750313" CREATED="1379946647410" MODIFIED="1379946659484"/>
+<node TEXT="exceptions/crashes in one module affect other modules" ID="ID_866018600" CREATED="1379946814146" MODIFIED="1379946836225"/>
+<node TEXT="memory safety violations" ID="ID_1883802172" CREATED="1379946659684" MODIFIED="1379946665523"/>
+<node TEXT="can access private members" ID="ID_539627805" CREATED="1379946668803" MODIFIED="1379946673670"/>
+</node>
+</node>
 <node TEXT="bus layer" ID="ID_1278142882" CREATED="1379926001213" MODIFIED="1379926003030">
 <node TEXT="goal: avoid point-to-point relationships between modules" ID="ID_1742843266" CREATED="1379926014678" MODIFIED="1379926025733"/>
 <node TEXT="bus layers allows unrelated modules to communicate" ID="ID_1839947242" CREATED="1379926029862" MODIFIED="1379926038043"/>
