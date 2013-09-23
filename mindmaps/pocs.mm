@@ -1230,6 +1230,50 @@
 </node>
 </node>
 </node>
+<node TEXT="Differenciated Storage Services" ID="ID_765850416" CREATED="1379952921288" MODIFIED="1379952929657">
+<node TEXT="summary" ID="ID_1067550477" CREATED="1379953227136" MODIFIED="1379953229061">
+<node TEXT="augments the block-based IO interface with classification metadata" ID="ID_1507942312" CREATED="1379953235707" MODIFIED="1379953253392"/>
+<node TEXT="exploit metadata to evict large files from cache quickly" ID="ID_119470101" CREATED="1379953253631" MODIFIED="1379953282894"/>
+<node TEXT="this speeds up IO workloads by 2x" ID="ID_1538720370" CREATED="1379953283085" MODIFIED="1379953295186"/>
+</node>
+<node TEXT="strong points" ID="ID_1925538475" CREATED="1379953229949" MODIFIED="1379953231471">
+<node TEXT="the idea seems simple, yet the benefits quite compelling" ID="ID_51645410" CREATED="1379953671715" MODIFIED="1379953692920"/>
+</node>
+<node TEXT="weak points" ID="ID_1852800817" CREATED="1379953231681" MODIFIED="1379953233247">
+<node TEXT="high price" ID="ID_1529053772" CREATED="1379953316418" MODIFIED="1379953325268">
+<node TEXT="needs changes at all layers" ID="ID_169382880" CREATED="1379953325973" MODIFIED="1379953332745"/>
+<node TEXT="hard to deploy incrementally?" ID="ID_745787094" CREATED="1379953336224" MODIFIED="1379953340584"/>
+</node>
+</node>
+</node>
+<node TEXT="Resilient Overlay Networks" ID="ID_1667653221" CREATED="1379952929863" MODIFIED="1379952935579">
+<node TEXT="summary" ID="ID_1628340299" CREATED="1379952961348" MODIFIED="1379952962986">
+<node TEXT="advocates an overlay with custom routing" ID="ID_1649835098" CREATED="1379952963570" MODIFIED="1379952974153"/>
+<node TEXT="achieves faster failure recovery" ID="ID_1294186455" CREATED="1379952974371" MODIFIED="1379952989113"/>
+<node TEXT="sometimes achives better latency/loss rate" ID="ID_901342452" CREATED="1379952989559" MODIFIED="1379953003793"/>
+</node>
+<node TEXT="strong points" ID="ID_205884803" CREATED="1379953006903" MODIFIED="1379953008401">
+<node TEXT="concept of overlay networks was influential" ID="ID_709587652" CREATED="1379953111124" MODIFIED="1379953119632">
+<node TEXT="peer-to-peer filesharing" ID="ID_1872617556" CREATED="1379953120168" MODIFIED="1379953129335"/>
+<node TEXT="bullet&apos; and others" ID="ID_569240665" CREATED="1379953129550" MODIFIED="1379953143179"/>
+<node TEXT="incremental deployment possible" ID="ID_6862270" CREATED="1379953365024" MODIFIED="1379953369850"/>
+</node>
+<node TEXT="in some sense it&apos;s surprising they could do so much better than the Internet" ID="ID_1734781990" CREATED="1379953197995" MODIFIED="1379953220610"/>
+</node>
+<node TEXT="weak points" ID="ID_943909970" CREATED="1379953018087" MODIFIED="1379953020430">
+<node TEXT="ultimately, the network just got better" ID="ID_1321417132" CREATED="1379953021262" MODIFIED="1379953028060"/>
+<node TEXT="lots of duplicated work, hard to re-use existing routing protocols" ID="ID_1304042201" CREATED="1379953162450" MODIFIED="1379953180721"/>
+</node>
+<node TEXT="questions" ID="ID_1355710244" CREATED="1379953039279" MODIFIED="1379953040946">
+<node TEXT="did they attack the wrong problem?" ID="ID_459275751" CREATED="1379953055712" MODIFIED="1379953067106">
+<node TEXT="it seems as if the problem was gone a few years later" ID="ID_1322610990" CREATED="1379953067770" MODIFIED="1379953086467"/>
+<node TEXT="is this the same in my case (with memory safety)?" ID="ID_1106465353" CREATED="1379953086704" MODIFIED="1379953103221"/>
+</node>
+<node TEXT="why didn&apos;t I know about this?" ID="ID_266815441" CREATED="1379953483929" MODIFIED="1379953490494">
+<node TEXT="it&apos;s extremely relevant for my master thesis" ID="ID_999715570" CREATED="1379953490990" MODIFIED="1379953499741"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 </map>
