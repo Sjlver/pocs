@@ -1,55 +1,7 @@
-<map version="freeplane 1.2.0">
+<map version="0.9.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="POCS" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1379339721940"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" show_note_icons="true"/>
-
-<map_styles>
-<stylenode LOCALIZED_TEXT="styles.root_node">
-<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right">
-<stylenode LOCALIZED_TEXT="default" MAX_WIDTH="600" COLOR="#000000" STYLE="as_parent">
-<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="defaultstyle.details"/>
-<stylenode LOCALIZED_TEXT="defaultstyle.note"/>
-<stylenode LOCALIZED_TEXT="defaultstyle.floating">
-<edge STYLE="hide_edge"/>
-<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
-</stylenode>
-</stylenode>
-<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right">
-<stylenode LOCALIZED_TEXT="styles.topic" COLOR="#18898b" STYLE="fork">
-<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="styles.subtopic" COLOR="#cc3300" STYLE="fork">
-<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="styles.subsubtopic" COLOR="#669900">
-<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="styles.important">
-<icon BUILTIN="yes"/>
-</stylenode>
-</stylenode>
-<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="right">
-<stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000">
-<font SIZE="18"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="AutomaticLayout.level,1" COLOR="#0033ff">
-<font SIZE="16"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="AutomaticLayout.level,2" COLOR="#00b439">
-<font SIZE="14"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="AutomaticLayout.level,3" COLOR="#990000">
-<font SIZE="12"/>
-</stylenode>
-<stylenode LOCALIZED_TEXT="AutomaticLayout.level,4" COLOR="#111111">
-<font SIZE="10"/>
-</stylenode>
-</stylenode>
-</stylenode>
-</map_styles>
-</hook>
+<node TEXT="POCS" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1379339721940">
+<hook NAME="MapStyle" max_node_width="600"/>
 <hook NAME="AutomaticEdgeColor" COUNTER="8"/>
 <node TEXT="Administrativia" POSITION="right" ID="ID_323086254" CREATED="1379413522540" MODIFIED="1379413526003">
 <edge COLOR="#00ff00"/>
@@ -1236,8 +1188,127 @@
 <node TEXT="exploit metadata to evict large files from cache quickly" ID="ID_119470101" CREATED="1379953253631" MODIFIED="1379953282894"/>
 <node TEXT="this speeds up IO workloads by 2x" ID="ID_1538720370" CREATED="1379953283085" MODIFIED="1379953295186"/>
 </node>
+<node TEXT="mechanism" ID="ID_1359608418" CREATED="1380026279234" MODIFIED="1380026281232">
+<node TEXT="classifiers" ID="ID_1731563411" CREATED="1380026288458" MODIFIED="1380026342321">
+<node TEXT="specified by the computer system" ID="ID_1138481250" CREATED="1380026367490" MODIFIED="1380026378352"/>
+<node TEXT="mapped to policies by computer system" ID="ID_1365645323" CREATED="1380026397009" MODIFIED="1380026629450">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      As an example, administrator gets some storage system that provides certain policies, and sets up a mapping from classifiers to these policies.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Programmers use the classifiers.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="allows separate evolution of policies from classifiers" ID="ID_141165804" CREATED="1380026634343" MODIFIED="1380026751332">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Without this mapping, it would be much harder to port/upgrade applications.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Now, all the application programmer has to do is attach the appropriate classifiers to each filesystem request. If the administrator wants to upgrade or change policies later, they can do so merely by changing the mapping.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="policies" ID="ID_1127058493" CREATED="1380026342890" MODIFIED="1380026345224">
+<node TEXT="provided by the storage system" ID="ID_1793565959" CREATED="1380026427785" MODIFIED="1380026531920">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      e.g.
+    </p>
+    <ul>
+      <li>
+        store with low latency
+      </li>
+      <li>
+        store for high bandwidth read
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
 <node TEXT="strong points" ID="ID_1925538475" CREATED="1379953229949" MODIFIED="1379953231471">
 <node TEXT="the idea seems simple, yet the benefits quite compelling" ID="ID_51645410" CREATED="1379953671715" MODIFIED="1379953692920"/>
+<node TEXT="avoids unnecessary &quot;prediction&quot;" ID="ID_1239816656" CREATED="1380026001116" MODIFIED="1380026033821">
+<node TEXT="storage systems don&apos;t have to predict what sort of data is being stored." ID="ID_1316841074" CREATED="1380026060251" MODIFIED="1380026248254">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      They lose information at the block interface anyway (e.g. is this metadata or a huge file? All I have are blocks!)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Computer systems don&apos;t have to predict performance of filesystems" ID="ID_1472146932" CREATED="1380026158411" MODIFIED="1380026188650"/>
+</node>
+<node TEXT="using &quot;hints&quot; instead of layer bypass" ID="ID_89701856" CREATED="1380026826382" MODIFIED="1380026841925">
+<node TEXT="can be ignored by systems" ID="ID_69013912" CREATED="1380026850774" MODIFIED="1380026854941">
+<node TEXT="better backwards compatibility" ID="ID_121611400" CREATED="1380026861078" MODIFIED="1380026873948"/>
+<node TEXT="better for adoption / momentum" ID="ID_463030782" CREATED="1380026877566" MODIFIED="1380026941489">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      By being able to ignore these hints, you can run an OS that attaches these classifiers to each request on top with a storage system that does not yet support them, and <i>then</i>&#160;upgrade them later.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="layer bypass adds complexity!" ID="ID_1529491842" CREATED="1380026958533" MODIFIED="1380027176259">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In layer bypass, kernel would have to have code to directly control every block device. More code = more bugs = more problems!
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="weak points" ID="ID_1852800817" CREATED="1379953231681" MODIFIED="1379953233247">
 <node TEXT="high price" ID="ID_1529053772" CREATED="1379953316418" MODIFIED="1379953325268">
@@ -1252,6 +1323,60 @@
 <node TEXT="achieves faster failure recovery" ID="ID_1294186455" CREATED="1379952974371" MODIFIED="1379952989113"/>
 <node TEXT="sometimes achives better latency/loss rate" ID="ID_901342452" CREATED="1379952989559" MODIFIED="1379953003793"/>
 </node>
+<node TEXT="mechanism" ID="ID_461517105" CREATED="1380027330330" MODIFIED="1380027332129">
+<node TEXT="nodes in RON probe each other" ID="ID_553104583" CREATED="1380027342307" MODIFIED="1380027501189">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      For link (actually a path beneath the overlay) health information.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      e.g. is this link lossy? what is the latency?
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="creates an N^2 traffic explosion!" ID="ID_831635966" CREATED="1380027406770" MODIFIED="1380027428570">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Mitigated by the fact that RONs are small
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="RON nodes route packets over RON overlay when RON has a better path than standard net path" ID="ID_1027057823" CREATED="1380027587881" MODIFIED="1380027685117">
+<richcontent TYPE="NOTE">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      By some metric (latency, availability).
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="Moves some control of routing out of the network and into the end system" ID="ID_605950807" CREATED="1380027706392" MODIFIED="1380027721390" COLOR="#ff0000">
+<font NAME="Liberation Sans" SIZE="12"/>
+<icon BUILTIN="yes"/>
+</node>
+</node>
+</node>
 <node TEXT="strong points" ID="ID_205884803" CREATED="1379953006903" MODIFIED="1379953008401">
 <node TEXT="concept of overlay networks was influential" ID="ID_709587652" CREATED="1379953111124" MODIFIED="1379953119632">
 <node TEXT="peer-to-peer filesharing" ID="ID_1872617556" CREATED="1379953120168" MODIFIED="1379953129335"/>
@@ -1259,6 +1384,8 @@
 <node TEXT="incremental deployment possible" ID="ID_6862270" CREATED="1379953365024" MODIFIED="1379953369850"/>
 </node>
 <node TEXT="in some sense it&apos;s surprising they could do so much better than the Internet" ID="ID_1734781990" CREATED="1379953197995" MODIFIED="1379953220610"/>
+<node TEXT="able to decrease time to route around failures by an order of magnitude" ID="ID_704572611" CREATED="1380027249219" MODIFIED="1380027314664"/>
+<node TEXT="able to route around most failures using only 1 RON node" ID="ID_669557743" CREATED="1380027546617" MODIFIED="1380027557416"/>
 </node>
 <node TEXT="weak points" ID="ID_943909970" CREATED="1379953018087" MODIFIED="1379953020430">
 <node TEXT="ultimately, the network just got better" ID="ID_1321417132" CREATED="1379953021262" MODIFIED="1379953028060"/>
