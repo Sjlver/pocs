@@ -1,7 +1,7 @@
 <map version="freeplane 1.2.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="POCS" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1379339721940"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" show_note_icons="true"/>
+    <properties show_note_icons="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node">
@@ -1516,8 +1516,127 @@
 <node TEXT="exploit metadata to evict large files from cache quickly" ID="ID_119470101" CREATED="1379953253631" MODIFIED="1379953282894"/>
 <node TEXT="this speeds up IO workloads by 2x" ID="ID_1538720370" CREATED="1379953283085" MODIFIED="1379953295186"/>
 </node>
+<node TEXT="mechanism" ID="ID_1359608418" CREATED="1380026279234" MODIFIED="1380026281232">
+<node TEXT="classifiers" ID="ID_1731563411" CREATED="1380026288458" MODIFIED="1380026342321">
+<node TEXT="specified by the computer system" ID="ID_1138481250" CREATED="1380026367490" MODIFIED="1380026378352"/>
+<node TEXT="mapped to policies by computer system" ID="ID_1365645323" CREATED="1380026397009" MODIFIED="1380026629450"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      As an example, administrator gets some storage system that provides certain policies, and sets up a mapping from classifiers to these policies.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Programmers use the classifiers.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="allows separate evolution of policies from classifiers" ID="ID_141165804" CREATED="1380026634343" MODIFIED="1380026751332"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Without this mapping, it would be much harder to port/upgrade applications.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Now, all the application programmer has to do is attach the appropriate classifiers to each filesystem request. If the administrator wants to upgrade or change policies later, they can do so merely by changing the mapping.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="policies" ID="ID_1127058493" CREATED="1380026342890" MODIFIED="1380026345224">
+<node TEXT="provided by the storage system" ID="ID_1793565959" CREATED="1380026427785" MODIFIED="1380026531920"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      e.g.
+    </p>
+    <ul>
+      <li>
+        store with low latency
+      </li>
+      <li>
+        store for high bandwidth read
+      </li>
+    </ul>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
 <node TEXT="strong points" ID="ID_1925538475" CREATED="1379953229949" MODIFIED="1379953231471">
 <node TEXT="the idea seems simple, yet the benefits quite compelling" ID="ID_51645410" CREATED="1379953671715" MODIFIED="1379953692920"/>
+<node TEXT="avoids unnecessary &quot;prediction&quot;" ID="ID_1239816656" CREATED="1380026001116" MODIFIED="1380026033821">
+<node TEXT="storage systems don&apos;t have to predict what sort of data is being stored." ID="ID_1316841074" CREATED="1380026060251" MODIFIED="1380026248254"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      They lose information at the block interface anyway (e.g. is this metadata or a huge file? All I have are blocks!)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Computer systems don&apos;t have to predict performance of filesystems" ID="ID_1472146932" CREATED="1380026158411" MODIFIED="1380026188650"/>
+</node>
+<node TEXT="using &quot;hints&quot; instead of layer bypass" ID="ID_89701856" CREATED="1380026826382" MODIFIED="1380026841925">
+<node TEXT="can be ignored by systems" ID="ID_69013912" CREATED="1380026850774" MODIFIED="1380026854941">
+<node TEXT="better backwards compatibility" ID="ID_121611400" CREATED="1380026861078" MODIFIED="1380026873948"/>
+<node TEXT="better for adoption / momentum" ID="ID_463030782" CREATED="1380026877566" MODIFIED="1380026941489"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      By being able to ignore these hints, you can run an OS that attaches these classifiers to each request on top with a storage system that does not yet support them, and <i>then</i>&#160;upgrade them later.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="layer bypass adds complexity!" ID="ID_1529491842" CREATED="1380026958533" MODIFIED="1380027176259"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In layer bypass, kernel would have to have code to directly control every block device. More code = more bugs = more problems!
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="weak points" ID="ID_1852800817" CREATED="1379953231681" MODIFIED="1379953233247">
 <node TEXT="high price" ID="ID_1529053772" CREATED="1379953316418" MODIFIED="1379953325268">
@@ -1547,6 +1666,140 @@
 <node TEXT="achieves faster failure recovery" ID="ID_1294186455" CREATED="1379952974371" MODIFIED="1379952989113"/>
 <node TEXT="sometimes achives better latency/loss rate" ID="ID_901342452" CREATED="1379952989559" MODIFIED="1379953003793"/>
 </node>
+<node TEXT="problem" ID="ID_778211050" CREATED="1380030349930" MODIFIED="1380030362890"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      what is this a solution to?
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="BGP convergence time causes transient outages" ID="ID_1387453372" CREATED="1380030364322" MODIFIED="1380030402696">
+<node TEXT="clients can&apos;t route around these outages because they can&apos;t choose alternate routes" ID="ID_1283343411" CREATED="1380030409834" MODIFIED="1380030428948"/>
+<node TEXT="TCP connections time out during these periods" ID="ID_1239294718" CREATED="1380030512609" MODIFIED="1380030526079"/>
+</node>
+<node TEXT="BGP can&apos;t privately advertise links" ID="ID_850616914" CREATED="1380030551825" MODIFIED="1380030560967">
+<node TEXT="prevents communication where it would otherwise be possible" ID="ID_1215759272" CREATED="1380030568537" MODIFIED="1380030675448"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      See Figure 2. If UUNET - ArosNet gets cut, Aros should still be able to connect to MIT via Utah (based on Internet2 private peering), but Utah can't advertise this link because then Qwest would start routing to MIT through them (presumably to avoid BBN traffic, unless they are an equal peer).
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="BGP pathing is based on AS hops" ID="ID_1371787304" CREATED="1380030751191" MODIFIED="1380030757310">
+<node TEXT="doesn&apos;t take into account other metrics" ID="ID_502463227" CREATED="1380030758439" MODIFIED="1380030768422">
+<node TEXT="reliability" ID="ID_1698066994" CREATED="1380030769646" MODIFIED="1380030772046"/>
+<node TEXT="bandwidth" ID="ID_906922641" CREATED="1380030773559" MODIFIED="1380030775574"/>
+<node TEXT="latency" ID="ID_1919542085" CREATED="1380030775959" MODIFIED="1380030777646"/>
+</node>
+</node>
+</node>
+<node TEXT="mechanism" ID="ID_461517105" CREATED="1380027330330" MODIFIED="1380028804201"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Some important specifics of RONs.
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="nodes in RON probe each other" ID="ID_553104583" CREATED="1380027342307" MODIFIED="1380027501189"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      For link (actually a path beneath the overlay) health information.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      e.g. is this link lossy? what is the latency?
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="creates an N^2 traffic explosion!" ID="ID_831635966" CREATED="1380027406770" MODIFIED="1380027428570"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Mitigated by the fact that RONs are small
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="RON nodes route packets over RON overlay when RON has a better path than standard net path" ID="ID_1027057823" CREATED="1380027587881" MODIFIED="1380027685117"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      By some metric (latency, availability).
+    </p>
+  </body>
+</html>
+</richcontent>
+<node TEXT="Moves some control of routing out of the network and into the end system" ID="ID_605950807" CREATED="1380027706392" MODIFIED="1380027721390" COLOR="#ff0000">
+<icon BUILTIN="yes"/>
+<font NAME="Liberation Sans" SIZE="12"/>
+</node>
+<node TEXT="only RON entry node has control over routing decisions" ID="ID_663799216" CREATED="1380033378838" MODIFIED="1380033424636"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      It pushes on a tag (to indicate what table/policy should be used), and then subsequent routers would demux on that tag.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="use traditional internet for scalability. use RON for (better) reliability" ID="ID_138028217" CREATED="1380028349579" MODIFIED="1380028710090" COLOR="#ff0000">
+<icon BUILTIN="yes"/>
+<font NAME="Liberation Sans" SIZE="12"/>
+</node>
+<node TEXT="design goals" ID="ID_1921711445" CREATED="1380031515897" MODIFIED="1380031525048">
+<node TEXT="expressive routing policy" ID="ID_1585434823" CREATED="1380031526385" MODIFIED="1380031531568">
+<node TEXT="link state = better routing decisions" ID="ID_1447312636" CREATED="1380031537809" MODIFIED="1380031565328"/>
+</node>
+<node TEXT="better integration with applications" ID="ID_388578542" CREATED="1380031570633" MODIFIED="1380031612092">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1283343411" STARTINCLINATION="556;0;" ENDINCLINATION="556;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
+<node TEXT="faster resolution of failures" ID="ID_739443819" CREATED="1380031589849" MODIFIED="1380031598768"/>
+</node>
+</node>
 <node TEXT="strong points" ID="ID_205884803" CREATED="1379953006903" MODIFIED="1379953008401">
 <node TEXT="concept of overlay networks was influential" ID="ID_709587652" CREATED="1379953111124" MODIFIED="1379953119632">
 <node TEXT="peer-to-peer filesharing" ID="ID_1872617556" CREATED="1379953120168" MODIFIED="1379953129335"/>
@@ -1554,10 +1807,47 @@
 <node TEXT="incremental deployment possible" ID="ID_6862270" CREATED="1379953365024" MODIFIED="1379953369850"/>
 </node>
 <node TEXT="in some sense it&apos;s surprising they could do so much better than the Internet" ID="ID_1734781990" CREATED="1379953197995" MODIFIED="1379953220610"/>
+<node TEXT="able to decrease time to route around failures by an order of magnitude" ID="ID_704572611" CREATED="1380027249219" MODIFIED="1380027314664"/>
+<node TEXT="able to route around most failures using only 1 RON node" ID="ID_669557743" CREATED="1380027546617" MODIFIED="1380027557416"/>
 </node>
 <node TEXT="weak points" ID="ID_943909970" CREATED="1379953018087" MODIFIED="1379953020430">
-<node TEXT="ultimately, the network just got better" ID="ID_1321417132" CREATED="1379953021262" MODIFIED="1379953028060"/>
+<node TEXT="ultimately, the network just got better" ID="ID_1321417132" CREATED="1379953021262" MODIFIED="1380028669804">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1560794687" STARTINCLINATION="140;0;" ENDINCLINATION="140;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+</node>
 <node TEXT="lots of duplicated work, hard to re-use existing routing protocols" ID="ID_1304042201" CREATED="1379953162450" MODIFIED="1379953180721"/>
+<node TEXT="probing is not scalable" ID="ID_652587898" CREATED="1380030051935" MODIFIED="1380030057073">
+<node TEXT="better router communication can help" ID="ID_1135033766" CREATED="1380030062388" MODIFIED="1380030104811"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Routers can exchange path information with each other, and possibly build upon that (instead of each having to duplicate their own efforts).
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="N^2 traffic is needed to ensure that N^2 virtual links are monitored" ID="ID_450133392" CREATED="1380034970143" MODIFIED="1380034988478"/>
+</node>
+<node TEXT="implementation is specific to single-hop indirection" ID="ID_1551622120" CREATED="1380033271574" MODIFIED="1380033285900">
+<node TEXT="due to non-monotonic paths metrics" ID="ID_1480424317" CREATED="1380033286653" MODIFIED="1380033321877"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      e.g. TCP bandwidth
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="questions" ID="ID_1355710244" CREATED="1379953039279" MODIFIED="1379953040946">
 <node TEXT="did they attack the wrong problem?" ID="ID_459275751" CREATED="1379953055712" MODIFIED="1379953067106">
@@ -1566,6 +1856,9 @@
 </node>
 <node TEXT="why didn&apos;t I know about this?" ID="ID_266815441" CREATED="1379953483929" MODIFIED="1379953490494">
 <node TEXT="it&apos;s extremely relevant for my master thesis" ID="ID_999715570" CREATED="1379953490990" MODIFIED="1379953499741"/>
+</node>
+<node TEXT="is the internet now reliable enough to make this obsolete?" ID="ID_1560794687" CREATED="1380028454635" MODIFIED="1380028483706">
+<node TEXT="in the past ~decade, has reliability improved enough to make the overhead of a RON unnecessary?" ID="ID_1933360915" CREATED="1380028484923" MODIFIED="1380028526557"/>
 </node>
 </node>
 </node>
