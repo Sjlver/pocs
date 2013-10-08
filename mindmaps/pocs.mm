@@ -2052,6 +2052,12 @@
 </node>
 </node>
 </node>
+<node TEXT="locality in virtual memory" ID="ID_1812980804" CREATED="1381228149969" MODIFIED="1381228155138">
+<node TEXT="LRU caching will keep working set" ID="ID_470269000" CREATED="1381228155906" MODIFIED="1381228169424">
+<node TEXT="according to definition of working set" ID="ID_1892398625" CREATED="1381228169964" MODIFIED="1381228175037"/>
+</node>
+<node TEXT="LRU implemented using access bit" ID="ID_524306084" CREATED="1381228178778" MODIFIED="1381228184070"/>
+</node>
 <node TEXT="future uses of locality" ID="ID_54180474" CREATED="1381178836545" MODIFIED="1381178842718">
 <node TEXT="locality is fundamental to human behavior" ID="ID_1138767255" CREATED="1381178844289" MODIFIED="1381178851486"/>
 </node>
