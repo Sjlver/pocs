@@ -50,7 +50,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="10"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="11"/>
 <node TEXT="Administrativia" POSITION="right" ID="ID_323086254" CREATED="1379413522540" MODIFIED="1379413526003">
 <edge COLOR="#00ff00"/>
 <node TEXT="grading" ID="ID_1154067530" CREATED="1379413527012" MODIFIED="1379413528127">
@@ -1745,6 +1745,424 @@
 <node TEXT="stronger consistency over groups of tuples" ID="ID_1460049436" CREATED="1381406278143" MODIFIED="1381406288974"/>
 </node>
 <node TEXT="spanner, global consistency" ID="ID_712061737" CREATED="1381405927880" MODIFIED="1381405937953"/>
+</node>
+</node>
+</node>
+<node TEXT="Atomicity and Consistency" POSITION="right" ID="ID_919213549" CREATED="1381733281699" MODIFIED="1381733621312">
+<edge COLOR="#007c7c"/>
+<node TEXT="transactions" ID="ID_1403242784" CREATED="1381733827538" MODIFIED="1381733830271">
+<node TEXT="idea" ID="ID_1443032843" CREATED="1381733830993" MODIFIED="1381733833439">
+<node TEXT="abstraction for dealing with concurrency" ID="ID_28845821" CREATED="1381733834081" MODIFIED="1381733840463"/>
+<node TEXT="&quot;take a book, and give money to the store&quot;" ID="ID_1872491938" CREATED="1381733845985" MODIFIED="1381733864047">
+<node TEXT="two actions" ID="ID_54636762" CREATED="1381733864737" MODIFIED="1381733867471">
+<node TEXT="taking the book" ID="ID_59265312" CREATED="1381733868273" MODIFIED="1381733871376"/>
+<node TEXT="giving the money" ID="ID_1636465351" CREATED="1381733871586" MODIFIED="1381733874511"/>
+</node>
+<node TEXT="want both actions or none" ID="ID_306171804" CREATED="1381733875377" MODIFIED="1381733881359"/>
+<node TEXT="want isolation between different buyers in the same store" ID="ID_1329382863" CREATED="1381733886082" MODIFIED="1381733895023"/>
+</node>
+<node TEXT="important in databases" ID="ID_397405708" CREATED="1381733906594" MODIFIED="1381733912751">
+<node TEXT="where concurrent execution is essential for performance" ID="ID_595424167" CREATED="1381733916226" MODIFIED="1381733925119"/>
+<node TEXT="transactions might be long-running" ID="ID_1599125420" CREATED="1381733934114" MODIFIED="1381733940447"/>
+<node TEXT="abstracts a sequence of reads and writes" ID="ID_829094993" CREATED="1381733990963" MODIFIED="1381733998192"/>
+</node>
+</node>
+<node TEXT="ACID properties" ID="ID_1068047166" CREATED="1381734031891" MODIFIED="1381734038000">
+<node TEXT="atomicity" ID="ID_1578452665" CREATED="1381734243271" MODIFIED="1381734248137">
+<node TEXT="commit and abort" ID="ID_160058343" CREATED="1381734257493" MODIFIED="1381734260468"/>
+<node TEXT="either the transaction completes all actions and commits..." ID="ID_212439228" CREATED="1381734262645" MODIFIED="1381734275619"/>
+<node TEXT="or it is completely undone and aborts" ID="ID_184573106" CREATED="1381734277605" MODIFIED="1381734286931"/>
+<node TEXT="DBMS logs all actions so it can perform undo." ID="ID_1085231663" CREATED="1381734290853" MODIFIED="1381734301779"/>
+<node TEXT="... or it might capture a snapshot to restore later" ID="ID_1006662392" CREATED="1381734307765" MODIFIED="1381734325826"/>
+</node>
+<node TEXT="consistency" ID="ID_1744575421" CREATED="1381734041667" MODIFIED="1381734044385">
+<node TEXT="if a transaction starts on a consistent database..." ID="ID_107057222" CREATED="1381734045107" MODIFIED="1381734055201"/>
+<node TEXT="... the database will be consistent after the transaction" ID="ID_397080555" CREATED="1381734055411" MODIFIED="1381734063281"/>
+<node TEXT="e.g., DB integrity constraints hold true" ID="ID_1058460027" CREATED="1381734063508" MODIFIED="1381734074497"/>
+</node>
+<node TEXT="isolation" ID="ID_1909417299" CREATED="1381734039092" MODIFIED="1381734041472">
+<node TEXT="users can think of each transaction as executing by itself" ID="ID_569504943" CREATED="1381734100612" MODIFIED="1381734111793"/>
+</node>
+<node TEXT="durability" ID="ID_1961338030" CREATED="1381734356181" MODIFIED="1381734359442">
+<node TEXT="things that commit successfully cannot get lost anymore" ID="ID_1425950833" CREATED="1381734387189" MODIFIED="1381734396994"/>
+</node>
+</node>
+<node TEXT="schedule" ID="ID_304209154" CREATED="1381734440085" MODIFIED="1381734442962">
+<node TEXT="orders actions of several transactions" ID="ID_544019036" CREATED="1381734449221" MODIFIED="1381734466595"/>
+<node TEXT="no guarantee on order of concurrent transactions" ID="ID_1849896110" CREATED="1381734488901" MODIFIED="1381734501331"/>
+<node TEXT="... but their effect must be compatible with some serialized schedule" ID="ID_1056958635" CREATED="1381734501525" MODIFIED="1381734513699"/>
+<node TEXT="&#x2192; sequential consistency" ID="ID_1648352641" CREATED="1381734585334" MODIFIED="1381734592056">
+<font BOLD="true"/>
+</node>
+<node TEXT="analyzing schedules" ID="ID_277494726" CREATED="1381734690071" MODIFIED="1381734695092">
+<node TEXT="reason about reads R and writes W" ID="ID_1904144619" CREATED="1381734696087" MODIFIED="1381734705556"/>
+<node TEXT="terminology" ID="ID_780563759" CREATED="1381734807672" MODIFIED="1381734810245">
+<node TEXT="&quot;serial schedule&quot;" ID="ID_946930438" CREATED="1381734728183" MODIFIED="1381734734468">
+<node TEXT="no interleavings between transactions" ID="ID_90152760" CREATED="1381734735111" MODIFIED="1381734740596"/>
+</node>
+<node TEXT="&quot;equivalent schedules&quot;" ID="ID_1108383790" CREATED="1381734741479" MODIFIED="1381734748325">
+<node TEXT="lead to the same final state" ID="ID_379075222" CREATED="1381734749191" MODIFIED="1381734756677"/>
+</node>
+<node TEXT="&quot;serializable schedule&quot;" ID="ID_1098317527" CREATED="1381734757575" MODIFIED="1381734763844">
+<node TEXT="is equivalent to some serial execution of the xacts" ID="ID_443907802" CREATED="1381734764807" MODIFIED="1381734788612"/>
+</node>
+</node>
+<node TEXT="anomalies" ID="ID_21754775" CREATED="1381734820168" MODIFIED="1381734822533">
+<node TEXT="dirty reads" ID="ID_1771345661" CREATED="1381734823128" MODIFIED="1381734826710">
+<node TEXT="WR conflicts" ID="ID_929478813" CREATED="1381734827208" MODIFIED="1381734832021"/>
+<node TEXT="a read receives yet uncommitted data" ID="ID_26670969" CREATED="1381734832968" MODIFIED="1381734845269"/>
+<node TEXT="the write might be aborted later" ID="ID_1806147352" CREATED="1381734850008" MODIFIED="1381734861142"/>
+</node>
+<node TEXT="unrepeatable reads" ID="ID_162456115" CREATED="1381734861944" MODIFIED="1381734866999">
+<node TEXT="RW conflicts" ID="ID_965903433" CREATED="1381734870824" MODIFIED="1381734911720"/>
+<node TEXT="transactions get different values for repeated reads" ID="ID_292713335" CREATED="1381734873752" MODIFIED="1381734884117"/>
+</node>
+<node TEXT="overwriting uncommitted data" ID="ID_1482082114" CREATED="1381734895673" MODIFIED="1381734903096">
+<node TEXT="WW conflicts" ID="ID_452554686" CREATED="1381734903770" MODIFIED="1381734909607"/>
+<node TEXT="a write is lost, and committed later" ID="ID_638577576" CREATED="1381734915946" MODIFIED="1381734923703"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="aborting a transaction" ID="ID_198843877" CREATED="1381734961370" MODIFIED="1381734965417">
+<node TEXT="completely undoes a transaction" ID="ID_567932189" CREATED="1381734966058" MODIFIED="1381734971532"/>
+<node TEXT="cascading aborts" ID="ID_509800703" CREATED="1381734974667" MODIFIED="1381734979719">
+<node TEXT="if A gets aborted and B depends on A, B also must be aborted" ID="ID_1105406373" CREATED="1381734980298" MODIFIED="1381734992216"/>
+<node TEXT="note: if B depends on A, B may not commit before A" ID="ID_1594969263" CREATED="1381734995402" MODIFIED="1381735005911"/>
+</node>
+</node>
+</node>
+<node TEXT="conflict serializability and locking" ID="ID_904027336" CREATED="1381735056154" MODIFIED="1381735066679">
+<node TEXT="conflict equivalence" ID="ID_1355917864" CREATED="1381735086363" MODIFIED="1381735095495">
+<node TEXT="two schedules are conflict equivalent if" ID="ID_1561432607" CREATED="1381735099306" MODIFIED="1381735109735">
+<node TEXT="they involve the same actions &amp; transactions" ID="ID_1842258937" CREATED="1381735110762" MODIFIED="1381735130552"/>
+<node TEXT="every pair of conflicting actions is ordered the same way" ID="ID_457823057" CREATED="1381735131226" MODIFIED="1381735141127"/>
+</node>
+</node>
+<node TEXT="conflict serializable" ID="ID_764476427" CREATED="1381735148123" MODIFIED="1381735154264">
+<node TEXT="conflict equivalent to some serial schedule" ID="ID_1857023056" CREATED="1381735155003" MODIFIED="1381735195240"/>
+<node TEXT="conflict serializable &#x21d2; serializable" ID="ID_743166264" CREATED="1381735175371" MODIFIED="1381735187992"/>
+</node>
+<node TEXT="dependency graph" ID="ID_1933445175" CREATED="1381735231980" MODIFIED="1381735235257">
+<node TEXT="nodes = transactions" ID="ID_198473998" CREATED="1381735235884" MODIFIED="1381735240649"/>
+<node TEXT="edges = dependencies" ID="ID_362531284" CREATED="1381735240860" MODIFIED="1381735244825">
+<node TEXT="write-read dependency" ID="ID_1553634941" CREATED="1381735245388" MODIFIED="1381735249865"/>
+<node TEXT="read-write dependency" ID="ID_778804345" CREATED="1381735254188" MODIFIED="1381735257977"/>
+<node TEXT="write-write dependency" ID="ID_1355421499" CREATED="1381735258220" MODIFIED="1381735263097"/>
+</node>
+<node TEXT="cycle = problem" ID="ID_131007577" CREATED="1381735265660" MODIFIED="1381735272218">
+<node TEXT="because a serial schedule corresponds to a topological ordering" ID="ID_1020266450" CREATED="1381735322028" MODIFIED="1381735332905"/>
+<node TEXT="a schedule is conflict serializable &#x2194; dependency graph is acyclic" ID="ID_551899482" CREATED="1381735350716" MODIFIED="1381735384522"/>
+</node>
+</node>
+<node TEXT="two-phase locking" ID="ID_298134498" CREATED="1381735398045" MODIFIED="1381735401498">
+<node TEXT="2PL" ID="ID_752983760" CREATED="1381735471165" MODIFIED="1381735473050"/>
+<node TEXT="guarantees conflict serializability" ID="ID_1048771773" CREATED="1381735402157" MODIFIED="1381735410522"/>
+<node TEXT="locks" ID="ID_483207348" CREATED="1381735413245" MODIFIED="1381735420954">
+<node TEXT="shared locks for reading" ID="ID_1440557507" CREATED="1381735421613" MODIFIED="1381735424842"/>
+<node TEXT="write locks for writing" ID="ID_182276023" CREATED="1381735425037" MODIFIED="1381735428282"/>
+</node>
+<node TEXT="two-phase" ID="ID_313055201" CREATED="1381735433294" MODIFIED="1381735441050">
+<node TEXT="a transaction cannot acquire more locks after it releases some" ID="ID_1611198710" CREATED="1381735441613" MODIFIED="1381735457866"/>
+<node TEXT="guarantees serializability" ID="ID_631981676" CREATED="1381735511472" MODIFIED="1381735518571"/>
+</node>
+<node TEXT="strict two-phase" ID="ID_664742893" CREATED="1381735474605" MODIFIED="1381735477946">
+<node TEXT="all locks are released atomically" ID="ID_573134524" CREATED="1381735480621" MODIFIED="1381735492635"/>
+<node TEXT="simplifies aborts" ID="ID_368141710" CREATED="1381735519438" MODIFIED="1381735528523">
+<node TEXT="no need for cascading aborts" ID="ID_1556231690" CREATED="1381735535150" MODIFIED="1381735547867"/>
+</node>
+</node>
+<node TEXT="deadlocks are possible" ID="ID_211132233" CREATED="1381735553310" MODIFIED="1381735556843">
+<node TEXT="because grow phase is not atomic" ID="ID_1514086244" CREATED="1381735557454" MODIFIED="1381735563420"/>
+<node TEXT="and order of locks is not specified for grow phase" ID="ID_66323362" CREATED="1381735564079" MODIFIED="1381735571691"/>
+</node>
+<node TEXT="problem with dynamic databases" ID="ID_1320974242" CREATED="1381735964177" MODIFIED="1381735974015">
+<node TEXT="if items can be created, 2PL is insufficient" ID="ID_472418985" CREATED="1381735975154" MODIFIED="1381735985295"/>
+<node TEXT="reads of entire relations depend on inserts/deletes" ID="ID_1212561340" CREATED="1381736054658" MODIFIED="1381736103696"/>
+<node TEXT="solutions" ID="ID_1528030768" CREATED="1381736105826" MODIFIED="1381736108625">
+<node TEXT="index locking" ID="ID_1861063777" CREATED="1381736109269" MODIFIED="1381736111584">
+<node TEXT="transactions that read entire relations lock index" ID="ID_889485516" CREATED="1381736122275" MODIFIED="1381736130339"/>
+<node TEXT="insertions/removals also lock index" ID="ID_1511477365" CREATED="1381736130579" MODIFIED="1381736137889"/>
+<node TEXT="updates do not need to lock index" ID="ID_1260761280" CREATED="1381736138355" MODIFIED="1381736149056"/>
+</node>
+<node TEXT="predicate locking" ID="ID_1277123553" CREATED="1381736168451" MODIFIED="1381736171539">
+<node TEXT="lock all records that satisfy some predicate" ID="ID_589940433" CREATED="1381736177267" MODIFIED="1381736188832"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="deadlocks" ID="ID_1264878884" CREATED="1381735591198" MODIFIED="1381735596779">
+<node TEXT="detection" ID="ID_1771490252" CREATED="1381735597374" MODIFIED="1381735642685">
+<node TEXT="dependency graphs between locks" ID="ID_1776669031" CREATED="1381735603390" MODIFIED="1381735609739">
+<node TEXT="&quot;wait-for graph&quot;" ID="ID_1557517068" CREATED="1381735614239" MODIFIED="1381735618731"/>
+</node>
+<node TEXT="cycles = problem" ID="ID_1962543099" CREATED="1381735622399" MODIFIED="1381735627820"/>
+<node TEXT="need to abort a transaction when a cycle is detected" ID="ID_89440166" CREATED="1381735629022" MODIFIED="1381735637820"/>
+</node>
+<node TEXT="prevention" ID="ID_1118237593" CREATED="1381735740799" MODIFIED="1381735743277">
+<node TEXT="create timestamps for each transaction" ID="ID_1293831313" CREATED="1381735743903" MODIFIED="1381735750973"/>
+<node TEXT="older timestamp = higher priority" ID="ID_553088633" CREATED="1381735788864" MODIFIED="1381735797645"/>
+<node TEXT="when A requires a lock held by B" ID="ID_1727720304" CREATED="1381735807168" MODIFIED="1381735815229">
+<node TEXT="wait-die strategy" ID="ID_243995440" CREATED="1381735815872" MODIFIED="1381735821005">
+<node TEXT="if A has higher priority, A waits" ID="ID_733663537" CREATED="1381735821568" MODIFIED="1381735836397"/>
+<node TEXT="otherwise A aborts" ID="ID_1663591108" CREATED="1381735837424" MODIFIED="1381735841549"/>
+</node>
+<node TEXT="wound-wait strategy" ID="ID_1716513444" CREATED="1381735843040" MODIFIED="1381735850638">
+<node TEXT="if A has higher priority, B aborts" ID="ID_1332349986" CREATED="1381735881712" MODIFIED="1381735889726"/>
+<node TEXT="otherwise A waits" ID="ID_823466725" CREATED="1381735891745" MODIFIED="1381735896462"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="view serializability" ID="ID_1098410034" CREATED="1381736200419" MODIFIED="1381736205553">
+<node TEXT="pure serializability is undecidable" ID="ID_820397143" CREATED="1381736225427" MODIFIED="1381736232577"/>
+<node TEXT="conflict serializability is a simplified decidable notion" ID="ID_1191543646" CREATED="1381736234772" MODIFIED="1381736252305"/>
+<node TEXT="view serializability more general than conflict serializabilty" ID="ID_664487810" CREATED="1381736278452" MODIFIED="1381736295425">
+<node TEXT="more complicated to check" ID="ID_636728338" CREATED="1381736301732" MODIFIED="1381736307154">
+<node TEXT="NP-complete" ID="ID_1666022286" CREATED="1381736311764" MODIFIED="1381736314434"/>
+</node>
+<node TEXT="but still decidable" ID="ID_532148464" CREATED="1381736307364" MODIFIED="1381736310625"/>
+</node>
+<node TEXT="view equivalence" ID="ID_1676891144" CREATED="1381736322660" MODIFIED="1381736325714">
+<node TEXT="whenever T reads the initial value of A in schedule S1..." ID="ID_283845469" CREATED="1381736326341" MODIFIED="1381736353394"/>
+<node TEXT="... it also reads the initial value in schedule S2." ID="ID_1838209392" CREATED="1381736353829" MODIFIED="1381736364818"/>
+<node TEXT="whenever T reads a value written by T2 in schedule S1..." ID="ID_1958322734" CREATED="1381736379448" MODIFIED="1381736396402"/>
+<node TEXT="... it also reads a value written by T2 in schedule S2." ID="ID_1666906732" CREATED="1381736396869" MODIFIED="1381736430690"/>
+<node TEXT="whenever T writes the final value in S1" ID="ID_1981628152" CREATED="1381736410709" MODIFIED="1381736418642"/>
+<node TEXT="... it also writes the final value in T2." ID="ID_835842230" CREATED="1381736420437" MODIFIED="1381736427459"/>
+</node>
+</node>
+</node>
+<node TEXT="optimistic concurrency control" ID="ID_341033364" CREATED="1381736774264" MODIFIED="1381736780006">
+<node TEXT="idea" ID="ID_809286789" CREATED="1381736780552" MODIFIED="1381736781573">
+<node TEXT="transactions are often lucky" ID="ID_333924951" CREATED="1381736782104" MODIFIED="1381736791685"/>
+<node TEXT="works well with low utilization" ID="ID_842649742" CREATED="1381736791944" MODIFIED="1381736805797"/>
+<node TEXT="works well with small transactions" ID="ID_1825709321" CREATED="1381736806296" MODIFIED="1381736814389"/>
+<node TEXT="execute transaction as if there were no conflicts" ID="ID_44326447" CREATED="1381736857433" MODIFIED="1381736869910">
+<node TEXT="just before committing, check" ID="ID_1282453335" CREATED="1381736870569" MODIFIED="1381736875894"/>
+<node TEXT="abort if there was a commit" ID="ID_1433441673" CREATED="1381736876121" MODIFIED="1381736880086"/>
+</node>
+</node>
+<node TEXT="disadvantages of locking" ID="ID_978994445" CREATED="1381736823224" MODIFIED="1381736827445">
+<node TEXT="overhead for lock management" ID="ID_776793887" CREATED="1381736828024" MODIFIED="1381736832645"/>
+<node TEXT="potential for deadlocks" ID="ID_1067464100" CREATED="1381736834584" MODIFIED="1381736838981"/>
+<node TEXT="lock contention for heavily used objects" ID="ID_459391752" CREATED="1381736839192" MODIFIED="1381736846661"/>
+</node>
+<node TEXT="Kung-Robinson model" ID="ID_438476454" CREATED="1381736890473" MODIFIED="1381736895238">
+<node TEXT="three phases for transactions" ID="ID_276270617" CREATED="1381736896890" MODIFIED="1381736900630">
+<node TEXT="read" ID="ID_601319405" CREATED="1381736901082" MODIFIED="1381736901830">
+<node TEXT="transaction reads from db" ID="ID_396832980" CREATED="1381736902360" MODIFIED="1381736912951"/>
+<node TEXT="performs writes to a private copy of the db" ID="ID_1411645230" CREATED="1381736913161" MODIFIED="1381736919382"/>
+</node>
+<node TEXT="validate" ID="ID_1377901166" CREATED="1381736920858" MODIFIED="1381736922102">
+<node TEXT="check for conflicts" ID="ID_109398359" CREATED="1381736934586" MODIFIED="1381736937222"/>
+</node>
+<node TEXT="write" ID="ID_1562309525" CREATED="1381736923129" MODIFIED="1381736924086"/>
+</node>
+<node TEXT="validations" ID="ID_1526264857" CREATED="1381736941369" MODIFIED="1381736943222">
+<node TEXT="three sufficient tests" ID="ID_194603995" CREATED="1381736944025" MODIFIED="1381736948184"/>
+<node TEXT="each transaction gets a timestamp" ID="ID_1593356835" CREATED="1381736948953" MODIFIED="1381736957030">
+<node TEXT="assigned at end of read phase" ID="ID_1551798318" CREATED="1381736966633" MODIFIED="1381736970663"/>
+</node>
+<node TEXT="&#x2200; i,j, Ti &lt; Tj: check that Ti completes before Tj starts" ID="ID_1563558498" CREATED="1381737004266" MODIFIED="1381737033511">
+<node TEXT="in this case, transactions already serial" ID="ID_1173878158" CREATED="1381737034970" MODIFIED="1381737044151"/>
+</node>
+<node TEXT="&#x2200; i,j, Ti &lt; Tj: check that Ti completes before Tj writes, and that Tj reads nothing that Ti wrote" ID="ID_1320563502" CREATED="1381737046538" MODIFIED="1381737098744">
+<node TEXT="Tj does not read dirty data" ID="ID_192971758" CREATED="1381737110507" MODIFIED="1381737118440"/>
+<node TEXT="Ti cannot overwrite Tj&apos;s writes" ID="ID_149079231" CREATED="1381737119963" MODIFIED="1381737129240"/>
+<node TEXT="result: Ti happens before Tj" ID="ID_39185621" CREATED="1381737133803" MODIFIED="1381737139944"/>
+</node>
+<node TEXT="&#x2200; i,j, Ti &lt; Tj: check that Ti completes read before Tj, writes(Ti) &#x2227; Read(Tj) is empty, writes(Ti) &#x2227; writes(Tj) is empty" ID="ID_321680716" CREATED="1381737141499" MODIFIED="1381737242121">
+<node TEXT="Tj does not read dirty data" ID="ID_35635113" CREATED="1381737243452" MODIFIED="1381737249561"/>
+<node TEXT="Transactions do not overwrite each other&apos;s writes" ID="ID_419984687" CREATED="1381737249835" MODIFIED="1381737258153"/>
+</node>
+</node>
+<node TEXT="conservative model" ID="ID_1485960135" CREATED="1381737385917" MODIFIED="1381737390154">
+<node TEXT="might restart transactions even though it&apos;s not necessary" ID="ID_35745342" CREATED="1381737390733" MODIFIED="1381737404138"/>
+</node>
+<node TEXT="critical section" ID="ID_1292158815" CREATED="1381758262288" MODIFIED="1381758267523">
+<node TEXT="assignment of Xaxt id" ID="ID_858582954" CREATED="1381758268194" MODIFIED="1381758277008"/>
+<node TEXT="validation" ID="ID_268593903" CREATED="1381758277218" MODIFIED="1381758278639"/>
+<node TEXT="write phase" ID="ID_1759436634" CREATED="1381758279586" MODIFIED="1381758281407"/>
+<node TEXT="... are all inside one critical section" ID="ID_1058906786" CREATED="1381758281953" MODIFIED="1381758287536"/>
+<node TEXT="costly, if write phase is long" ID="ID_1001217757" CREATED="1381758306610" MODIFIED="1381758321156">
+<icon BUILTIN="smily_bad"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="timestamp concurrency control" ID="ID_1954434406" CREATED="1381758672244" MODIFIED="1381758678658">
+<node TEXT="idea" ID="ID_1212073146" CREATED="1381758680628" MODIFIED="1381758682386">
+<node TEXT="give each object a read and write timestamp" ID="ID_888811574" CREATED="1381758682948" MODIFIED="1381758691107"/>
+<node TEXT="give each transaction a timestamp" ID="ID_1528169802" CREATED="1381758691332" MODIFIED="1381758696003"/>
+<node TEXT="use timestamps to detect conflicts" ID="ID_388026441" CREATED="1381758696228" MODIFIED="1381758704386"/>
+</node>
+<node TEXT="reading a value" ID="ID_1357104989" CREATED="1381758795525" MODIFIED="1381758797859">
+<node TEXT="let&apos;s say transaction A wants to read object O" ID="ID_303268688" CREATED="1381758798597" MODIFIED="1381758818963"/>
+<node TEXT="if ts(A) &lt; writets(O)" ID="ID_1020547369" CREATED="1381758819509" MODIFIED="1381758836323">
+<node TEXT="O has been overwritten since transaction began" ID="ID_86817180" CREATED="1381758836901" MODIFIED="1381758850643"/>
+<node TEXT="abort A and restart with a larger timestamp" ID="ID_959774707" CREATED="1381758850853" MODIFIED="1381758865427">
+<node TEXT="overhead" ID="ID_1977203056" CREATED="1381758945862" MODIFIED="1381758953589">
+<icon BUILTIN="smily_bad"/>
+</node>
+</node>
+</node>
+<node TEXT="if ts(A) &#x2265; writets(O)" ID="ID_1247327613" CREATED="1381758870374" MODIFIED="1381758882099">
+<node TEXT="allow A to read O" ID="ID_303891467" CREATED="1381758882806" MODIFIED="1381758887539"/>
+<node TEXT="set readts(O) to max(readts(O), ts(A))" ID="ID_1416145903" CREATED="1381758887782" MODIFIED="1381758906420"/>
+<node TEXT="store updated readts(O) to disk" ID="ID_877151947" CREATED="1381758916982" MODIFIED="1381758925843">
+<node TEXT="overhead" ID="ID_195548210" CREATED="1381758926534" MODIFIED="1381758929924">
+<icon BUILTIN="smily_bad"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="writing a value" ID="ID_1086365321" CREATED="1381758962471" MODIFIED="1381758965268">
+<node TEXT="if ts(a) &lt; readts(O)" ID="ID_1414535609" CREATED="1381758965991" MODIFIED="1381758976324">
+<node TEXT="abort and restart A" ID="ID_1266273809" CREATED="1381758977559" MODIFIED="1381758981780"/>
+</node>
+<node TEXT="if ts(A) &lt; writets(O)" ID="ID_863437941" CREATED="1381758985015" MODIFIED="1381758996372">
+<node TEXT="ignore outdated write" ID="ID_1020161584" CREATED="1381758999447" MODIFIED="1381759006069"/>
+<node TEXT="no need to restart T" ID="ID_1829682707" CREATED="1381759006327" MODIFIED="1381759012196"/>
+<node TEXT="&quot;Thomas Write Rule&quot;" ID="ID_1345418922" CREATED="1381759026247" MODIFIED="1381759031396"/>
+</node>
+<node TEXT="otherwise" ID="ID_22966424" CREATED="1381759035479" MODIFIED="1381759037524">
+<node TEXT="allow the write" ID="ID_494026965" CREATED="1381759038151" MODIFIED="1381759042020"/>
+<node TEXT="update the writets" ID="ID_344682572" CREATED="1381759042216" MODIFIED="1381759046804"/>
+</node>
+</node>
+<node TEXT="advantages" ID="ID_148046338" CREATED="1381759201320" MODIFIED="1381759227942">
+<node TEXT="no deadlocks" ID="ID_1680446566" CREATED="1381759203704" MODIFIED="1381759205877"/>
+<node TEXT="allows some schedules that are not conflict serializable" ID="ID_718608100" CREATED="1381759206120" MODIFIED="1381759218742"/>
+</node>
+</node>
+<node TEXT="multiversion concurrency control" ID="ID_433788279" CREATED="1381759238264" MODIFIED="1381759243685">
+<node TEXT="idea" ID="ID_1178028003" CREATED="1381759254601" MODIFIED="1381759256390">
+<node TEXT="there are multiple versions of objects" ID="ID_1405958111" CREATED="1381759256921" MODIFIED="1381759264630"/>
+<node TEXT="uses efficient snapshots of the database" ID="ID_1159282544" CREATED="1381759273689" MODIFIED="1381759283750"/>
+<node TEXT="snapshots are chained to previous versions" ID="ID_133089087" CREATED="1381759284409" MODIFIED="1381759292198"/>
+<node TEXT="transactions are classified as readers and writers" ID="ID_1753515870" CREATED="1381759310793" MODIFIED="1381759319366">
+<node TEXT="readers may always proceed" ID="ID_1998684210" CREATED="1381759319881" MODIFIED="1381759324232"/>
+<node TEXT="writers might sometimes be aborted" ID="ID_353364594" CREATED="1381759324441" MODIFIED="1381759330486"/>
+</node>
+</node>
+<node TEXT="reading a value" ID="ID_571821904" CREATED="1381759332201" MODIFIED="1381759335367">
+<node TEXT="for each object to be read, find the newest version" ID="ID_351272056" CREATED="1381759337225" MODIFIED="1381759349287">
+<node TEXT="newest with writets &lt; ts(xact)" ID="ID_856791902" CREATED="1381759352537" MODIFIED="1381759368775"/>
+</node>
+</node>
+<node TEXT="writing a value" ID="ID_880657749" CREATED="1381759397962" MODIFIED="1381759401783">
+<node TEXT="find newest version such that writets &lt; ts(xact)" ID="ID_1195397112" CREATED="1381759402570" MODIFIED="1381759418711"/>
+<node TEXT="if readts &lt; ts(xact)" ID="ID_1061135015" CREATED="1381759463690" MODIFIED="1381759476823">
+<node TEXT="allow write" ID="ID_1755707073" CREATED="1381759478154" MODIFIED="1381759480568"/>
+<node TEXT="create new version with timestamps equal to ts(xact)" ID="ID_950808497" CREATED="1381759480762" MODIFIED="1381759495991"/>
+</node>
+<node TEXT="otherwise" ID="ID_1175848645" CREATED="1381759497434" MODIFIED="1381759499719">
+<node TEXT="reject write and restart Xact" ID="ID_1546153049" CREATED="1381759500250" MODIFIED="1381759508807"/>
+</node>
+</node>
+<node TEXT="advantage" ID="ID_1671894079" CREATED="1381759689420" MODIFIED="1381759691481">
+<node TEXT="readers need never be aborted because old versions are still around" ID="ID_133806642" CREATED="1381759692124" MODIFIED="1381759749387"/>
+</node>
+</node>
+<node TEXT="snapshot isolation" ID="ID_298737339" CREATED="1381759774396" MODIFIED="1381759778474">
+<node TEXT="sql-92 isolation levels" ID="ID_457646509" CREATED="1381759788301" MODIFIED="1381759796618">
+<node TEXT="read uncommitted" ID="ID_1237338123" CREATED="1381759797533" MODIFIED="1381759802234"/>
+<node TEXT="read committed" ID="ID_73429399" CREATED="1381759802429" MODIFIED="1381759805210"/>
+<node TEXT="repeatable reads" ID="ID_1721543730" CREATED="1381759805437" MODIFIED="1381759808234"/>
+<node TEXT="serializable" ID="ID_534984773" CREATED="1381759808413" MODIFIED="1381759813146"/>
+</node>
+<node TEXT="snapshot isolation" ID="ID_1693731093" CREATED="1381759839325" MODIFIED="1381759844298">
+<node TEXT="used in many popular DBMS" ID="ID_110008279" CREATED="1381759844812" MODIFIED="1381759849866"/>
+<node TEXT="aimed to guarantee serializability" ID="ID_283315274" CREATED="1381759850061" MODIFIED="1381759860586"/>
+<node TEXT="but does not guarantee serializability" ID="ID_1242437171" CREATED="1381759860861" MODIFIED="1381759875148">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+<node TEXT="how does it work?" ID="ID_1865031184" CREATED="1381759877229" MODIFIED="1381759881258">
+<node TEXT="xact acts on a conceptual copy of the DB" ID="ID_1461095774" CREATED="1381759883773" MODIFIED="1381759904698"/>
+<node TEXT="guarantees that reads are consistent" ID="ID_1459749388" CREATED="1381759909981" MODIFIED="1381759927067"/>
+<node TEXT="commit only if no updates of xact conflict with updates made since the snapshot" ID="ID_723931664" CREATED="1381759942142" MODIFIED="1381759958859"/>
+</node>
+<node TEXT="write skew anomaly" ID="ID_1178046750" CREATED="1381759975662" MODIFIED="1381759983035">
+<node TEXT="T1: read(a), write(b)" ID="ID_1199885428" CREATED="1381759984766" MODIFIED="1381759995339"/>
+<node TEXT="T2: read(b), write(a)" ID="ID_568757023" CREATED="1381759995550" MODIFIED="1381760050060"/>
+<node TEXT="schedule: read(a), read(b), write(b), write(a) is allowed" ID="ID_1483579947" CREATED="1381760051422" MODIFIED="1381760070796"/>
+<node TEXT="schedule is not serializable" ID="ID_683078683" CREATED="1381760099007" MODIFIED="1381760108461">
+<icon BUILTIN="messagebox_warning"/>
+</node>
+</node>
+<node TEXT="relationships" ID="ID_919117699" CREATED="1381760164959" MODIFIED="1381760169340">
+<node TEXT="to optimistic concurrency control" ID="ID_1207367871" CREATED="1381760123727" MODIFIED="1381760172685">
+<node TEXT="similar analysis phase" ID="ID_1847756324" CREATED="1381760131759" MODIFIED="1381760143596"/>
+<node TEXT="analysis tests whether write sets overlap" ID="ID_1700351199" CREATED="1381760151567" MODIFIED="1381760163680"/>
+</node>
+<node TEXT="to multiversion concurrency control" ID="ID_1241441454" CREATED="1381760176367" MODIFIED="1381760184013">
+<node TEXT="multiversion is a way to implement snapshot isolation" ID="ID_1219496958" CREATED="1381760188207" MODIFIED="1381760200349"/>
+<node TEXT="in snapshot isolation, write conflicts are not correctly caught" ID="ID_1664955905" CREATED="1381760207264" MODIFIED="1381760233469"/>
+<node TEXT="snapshot isolation does not need timestamps" ID="ID_1472106551" CREATED="1381760257840" MODIFIED="1381760266733"/>
+</node>
+<node TEXT="SI does not use locks" ID="ID_1110754017" CREATED="1381760270672" MODIFIED="1381760275197">
+<node TEXT="but some systems implementing it do..." ID="ID_1082488169" CREATED="1381760279776" MODIFIED="1381760286558"/>
+</node>
+</node>
+</node>
+<node TEXT="distributed transactions" ID="ID_1747736213" CREATED="1381763169430" MODIFIED="1381763172995">
+<node TEXT="model" ID="ID_1181564619" CREATED="1381763174758" MODIFIED="1381763177795">
+<node TEXT="multiple DB servers" ID="ID_1852972710" CREATED="1381763178278" MODIFIED="1381763183411"/>
+<node TEXT="no replication" ID="ID_416422593" CREATED="1381763183622" MODIFIED="1381763187011"/>
+<node TEXT="transactions access objects on multiple servers" ID="ID_374081376" CREATED="1381763187222" MODIFIED="1381763195571"/>
+</node>
+<node TEXT="serializability" ID="ID_656928069" CREATED="1381763207398" MODIFIED="1381763212387">
+<node TEXT="global 2PL?" ID="ID_1259848463" CREATED="1381763212934" MODIFIED="1381763219283">
+<node TEXT="single server issues global locks" ID="ID_1965032210" CREATED="1381763223446" MODIFIED="1381763231139"/>
+</node>
+<node TEXT="local strict 2PL?" ID="ID_816826414" CREATED="1381763232918" MODIFIED="1381763238307">
+<node TEXT="sufficient to do locking on each server individually" ID="ID_1048296065" CREATED="1381763244822" MODIFIED="1381763256227"/>
+<node TEXT="strictness is needed because transactions don&apos;t end on each node at the same time" ID="ID_1536864994" CREATED="1381763380327" MODIFIED="1381763394148"/>
+<node TEXT="hence locks could be released too early on some nodes, without strictness" ID="ID_508642473" CREATED="1381763410360" MODIFIED="1381763424293"/>
+</node>
+</node>
+<node TEXT="global deadlocks" ID="ID_862727142" CREATED="1381763470808" MODIFIED="1381763473478">
+<node TEXT="each site maintains local waits-for graph" ID="ID_1461665624" CREATED="1381763477496" MODIFIED="1381763485365"/>
+<node TEXT="centralize wait-for graphs" ID="ID_1827874796" CREATED="1381763504280" MODIFIED="1381763512997">
+<node TEXT="single point of failure" ID="ID_1686564650" CREATED="1381763516008" MODIFIED="1381763522294">
+<icon BUILTIN="smily_bad"/>
+</node>
+</node>
+<node TEXT="hierarchical scheme" ID="ID_223406200" CREATED="1381763523512" MODIFIED="1381763527525"/>
+<node TEXT="timeout" ID="ID_623365287" CREATED="1381763530312" MODIFIED="1381763533606">
+<node TEXT="abort if a xact waits too long" ID="ID_913570913" CREATED="1381763534219" MODIFIED="1381763541430"/>
+<node TEXT="but what should the timeout value be?" ID="ID_1706016096" CREATED="1381763542713" MODIFIED="1381763549078"/>
+</node>
+</node>
+<node TEXT="two-phase commit" ID="ID_1735311039" CREATED="1381763553977" MODIFIED="1381763558742">
+<node TEXT="problem: all nodes need to agree on commit" ID="ID_271235893" CREATED="1381763574937" MODIFIED="1381763581366">
+<node TEXT="aka distributed concensus" ID="ID_44924276" CREATED="1381763586425" MODIFIED="1381763591926"/>
+</node>
+<node TEXT="participants" ID="ID_257681236" CREATED="1381763602761" MODIFIED="1381763619686">
+<node TEXT="1 coordinator" ID="ID_945142178" CREATED="1381763620185" MODIFIED="1381763623286"/>
+<node TEXT="many subordinates" ID="ID_620866369" CREATED="1381763623500" MODIFIED="1381763626246"/>
+</node>
+<node TEXT="protocol" ID="ID_952327068" CREATED="1381763636777" MODIFIED="1381763642551">
+<node TEXT="coordinator sends prepare signal" ID="ID_528165926" CREATED="1381763643193" MODIFIED="1381763649399"/>
+<node TEXT="subordinates force-write a prepare record" ID="ID_1166557375" CREATED="1381763651418" MODIFIED="1381763662215"/>
+<node TEXT="subordinates check integrity, answer &quot;yes&quot; or &quot;no&quot;" ID="ID_760460458" CREATED="1381763662842" MODIFIED="1381763675639"/>
+<node TEXT="coordinator waits for all responses" ID="ID_962461221" CREATED="1381763678970" MODIFIED="1381763685959"/>
+<node TEXT="coordinator force-writes commit or abort" ID="ID_779205494" CREATED="1381763690266" MODIFIED="1381763699847"/>
+<node TEXT="coordinator sends commit/abort to everybody" ID="ID_544179876" CREATED="1381763700058" MODIFIED="1381763707992"/>
+<node TEXT="subordinates force-write abort or commit" ID="ID_128937088" CREATED="1381763710554" MODIFIED="1381763724583"/>
+<node TEXT="subordinates send ACK" ID="ID_100692049" CREATED="1381763724810" MODIFIED="1381763729319"/>
+<node TEXT="coordinator waits for all ACKs" ID="ID_210118792" CREATED="1381763729578" MODIFIED="1381763735415"/>
+<node TEXT="coordinator writes end record" ID="ID_1034251323" CREATED="1381763736170" MODIFIED="1381763741063"/>
+</node>
+<node TEXT="two &quot;phases&quot;" ID="ID_1349569227" CREATED="1381763778314" MODIFIED="1381763783847">
+<node TEXT="1) voting" ID="ID_680652592" CREATED="1381763784491" MODIFIED="1381763787080"/>
+<node TEXT="2) termination" ID="ID_816220112" CREATED="1381763787339" MODIFIED="1381763790728"/>
+</node>
+<node TEXT="log" ID="ID_1215168684" CREATED="1381763800987" MODIFIED="1381763802232">
+<node TEXT="needs a log where all decisions are recorded" ID="ID_381909702" CREATED="1381763802763" MODIFIED="1381763808823"/>
+</node>
 </node>
 </node>
 </node>
