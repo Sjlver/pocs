@@ -2165,6 +2165,22 @@
 </node>
 </node>
 </node>
+<node TEXT="instruction-level parallelism" ID="ID_946319866" CREATED="1382008598250" MODIFIED="1382008605156">
+<node TEXT="pipelined designs" ID="ID_1065473234" CREATED="1382008608111" MODIFIED="1382008613105">
+<node TEXT="necessary for performance" ID="ID_1626741052" CREATED="1382008613568" MODIFIED="1382008618643"/>
+<node TEXT="detects data dependencies" ID="ID_1720733701" CREATED="1382008623818" MODIFIED="1382008629021"/>
+<node TEXT="uses register renaming to reduce dependencies" ID="ID_1184535786" CREATED="1382008629227" MODIFIED="1382008641346"/>
+</node>
+<node TEXT="register renaming" ID="ID_75024273" CREATED="1382008642606" MODIFIED="1382008645930">
+<node TEXT="problem: same registers are used more than once" ID="ID_1862045246" CREATED="1382008684103" MODIFIED="1382008694531"/>
+<node TEXT="operations that use the same register cannot be parallelized" ID="ID_1040571157" CREATED="1382008694745" MODIFIED="1382008712338"/>
+<node TEXT="register renaming = choose a (different) physical register for different instruction slots" ID="ID_437847800" CREATED="1382008744395" MODIFIED="1382008773315"/>
+<node TEXT="a form of multiversion concurrency control?" ID="ID_998291939" CREATED="1382008840849" MODIFIED="1382008849715">
+<node TEXT="independent instruction streams get their own copy of registers" ID="ID_546307270" CREATED="1382008871157" MODIFIED="1382008883690"/>
+</node>
+<node TEXT="&#x2192; Figure 9.34 in Saltzer+Kaashoek" ID="ID_681520022" CREATED="1382008777478" MODIFIED="1382008791107"/>
+</node>
+</node>
 </node>
 <node TEXT="Papers" POSITION="left" ID="ID_1384921320" CREATED="1379576056086" MODIFIED="1379576058096">
 <edge COLOR="#ff00ff"/>
