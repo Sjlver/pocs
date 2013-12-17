@@ -50,7 +50,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="2"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="3"/>
 <node TEXT="Administrativia" POSITION="right" ID="ID_323086254" CREATED="1379413522540" MODIFIED="1379413526003">
 <edge COLOR="#00ff00"/>
 <node TEXT="grading" ID="ID_1154067530" CREATED="1379413527012" MODIFIED="1379413528127">
@@ -2970,6 +2970,188 @@
 </node>
 </node>
 <node TEXT="case study: VMware Desktop" ID="ID_1151183583" CREATED="1387287606581" MODIFIED="1387287617874"/>
+</node>
+<node TEXT="End-to-end arguments" POSITION="right" ID="ID_1756994898" CREATED="1387292693590" MODIFIED="1387292698868">
+<edge COLOR="#00ff00"/>
+<node TEXT="history" ID="ID_553292611" CREATED="1387292821655" MODIFIED="1387292824260">
+<node TEXT="1973" OBJECT="java.lang.Long|1973" ID="ID_668020930" CREATED="1387292840616" MODIFIED="1387292846004">
+<node TEXT="Saltzer collected design principles for security" ID="ID_1822533928" CREATED="1387292846584" MODIFIED="1387292858261"/>
+<node TEXT="e.g., principle of least privilege" ID="ID_1096717767" CREATED="1387292860488" MODIFIED="1387292866741"/>
+</node>
+<node TEXT="1976" OBJECT="java.lang.Long|1976" ID="ID_880058969" CREATED="1387292892712" MODIFIED="1387292894805">
+<node TEXT="layering process and memory abstractions" ID="ID_498881952" CREATED="1387292895224" MODIFIED="1387292901493"/>
+<node TEXT="minimising the TCB" ID="ID_455027901" CREATED="1387292902728" MODIFIED="1387292913845"/>
+<node TEXT="principles for database recovery" ID="ID_1616644422" CREATED="1387292915848" MODIFIED="1387292920837"/>
+</node>
+<node TEXT="1977" OBJECT="java.lang.Long|1977" ID="ID_1503869003" CREATED="1387292925672" MODIFIED="1387292943862">
+<node TEXT="TCP design &quot;factored&quot; into layers" ID="ID_964422126" CREATED="1387292928840" MODIFIED="1387292941045"/>
+<node TEXT="David Clark&apos;s paper from 1978" ID="ID_216332553" CREATED="1387292972105" MODIFIED="1387292980870">
+<node TEXT="design philosophy of the darpa internet protocols" ID="ID_1675764585" CREATED="1387293005305" MODIFIED="1387293013782"/>
+<node TEXT="top goal: reuse existing networks" ID="ID_579549447" CREATED="1387293022921" MODIFIED="1387293029110"/>
+<node TEXT="applications cannot be foreseen" ID="ID_1970107770" CREATED="1387293058057" MODIFIED="1387293068214"/>
+<node TEXT="sociological impact of internet" ID="ID_1150408897" CREATED="1387293069705" MODIFIED="1387293076422"/>
+</node>
+</node>
+<node TEXT="1984" OBJECT="java.lang.Long|1984" ID="ID_1549192251" CREATED="1387293730462" MODIFIED="1387293733643">
+<node TEXT="paper published in ACM TOCS" ID="ID_1237830820" CREATED="1387293733966" MODIFIED="1387293742427"/>
+</node>
+<node TEXT="1997" OBJECT="java.lang.Long|1997" ID="ID_1116434934" CREATED="1387293746670" MODIFIED="1387293748155">
+<node TEXT="active networking vs end-to-end" ID="ID_521901050" CREATED="1387293748494" MODIFIED="1387293753499"/>
+</node>
+<node TEXT="2000" OBJECT="java.lang.Long|2000" ID="ID_1479419551" CREATED="1387293765262" MODIFIED="1387293767963">
+<node TEXT="end-to-end applied to network policy" ID="ID_205764319" CREATED="1387293853055" MODIFIED="1387293860396"/>
+<node TEXT="end-to-end = neutral network" ID="ID_1439964625" CREATED="1387293768318" MODIFIED="1387293789707">
+<node TEXT="does not discriminate new applications" ID="ID_1015922358" CREATED="1387293790046" MODIFIED="1387293798795"/>
+</node>
+</node>
+</node>
+<node TEXT="definition" ID="ID_1300754390" CREATED="1387292802327" MODIFIED="1387292804468">
+<node TEXT="Paper by Saltzer and Reed: end-to-end argument" ID="ID_480058469" CREATED="1387293085065" MODIFIED="1387293112791"/>
+<node TEXT="&quot;Put functionality at the end points&quot;" ID="ID_1339132554" CREATED="1387293113898" MODIFIED="1387293161575">
+<node TEXT="it&apos;s actually not possible to implement functionality entirely inside the network" ID="ID_683105725" CREATED="1387293183194" MODIFIED="1387293198823"/>
+<node TEXT="one always needs end-to-end control" ID="ID_1279663106" CREATED="1387293206026" MODIFIED="1387293226375"/>
+</node>
+<node TEXT="what is it?" ID="ID_861887430" CREATED="1387293265002" MODIFIED="1387293268375">
+<node TEXT="class of arguments against low level function implementation" ID="ID_275415388" CREATED="1387293268939" MODIFIED="1387293278440"/>
+<node TEXT="what is it for?" ID="ID_1475831930" CREATED="1387293281563" MODIFIED="1387293284152">
+<node TEXT="for stopping and thinking" ID="ID_810681406" CREATED="1387293290523" MODIFIED="1387293304504"/>
+<node TEXT="being careful, designing functions properly" ID="ID_1650136301" CREATED="1387293637901" MODIFIED="1387293651338"/>
+</node>
+<node TEXT="when does it applly?" ID="ID_153560725" CREATED="1387293284350" MODIFIED="1387293287736">
+<node TEXT="at design time, not runtime" ID="ID_180346435" CREATED="1387293298027" MODIFIED="1387293302312"/>
+</node>
+<node TEXT="what is an &quot;endpoint&quot;?" ID="ID_1717781621" CREATED="1387293307915" MODIFIED="1387293312568">
+<node TEXT="is the &quot;cloud&quot; in the network, or not?" ID="ID_738815781" CREATED="1387293399612" MODIFIED="1387293408025">
+<node TEXT="it&apos;s an endpoint, actually" ID="ID_679896872" CREATED="1387293411484" MODIFIED="1387293415289"/>
+</node>
+<node TEXT="depends on the system" ID="ID_1247799850" CREATED="1387295654475" MODIFIED="1387295661545">
+<node TEXT="could be a &quot;user&quot; or &quot;security principal&quot;" ID="ID_1101621230" CREATED="1387295661771" MODIFIED="1387295669768"/>
+<node TEXT="could be a &quot;socket&quot;" ID="ID_1084697033" CREATED="1387295671675" MODIFIED="1387295675321"/>
+</node>
+</node>
+</node>
+<node TEXT="examples" ID="ID_1563931097" CREATED="1387293326443" MODIFIED="1387293328232">
+<node TEXT="secure message delivery" ID="ID_336196871" CREATED="1387293333659" MODIFIED="1387293337816"/>
+</node>
+<node TEXT="non-examples" ID="ID_1703426211" CREATED="1387293328443" MODIFIED="1387293331400">
+<node TEXT="multicast routing" ID="ID_817147303" CREATED="1387293338746" MODIFIED="1387293342760"/>
+<node TEXT="packet fragmentation and re-assembly" ID="ID_1706603327" CREATED="1387293343931" MODIFIED="1387293349912"/>
+<node TEXT="end-to-end argument does not say anything against that" ID="ID_1508008804" CREATED="1387293374747" MODIFIED="1387293389928"/>
+<node TEXT="traffic should not go through a particular country" ID="ID_405402194" CREATED="1387293458044" MODIFIED="1387293465641"/>
+</node>
+</node>
+<node TEXT="principled design and modularity" ID="ID_152455201" CREATED="1387292804695" MODIFIED="1387292809525">
+<node TEXT="expansive vs emergent" ID="ID_21441807" CREATED="1387293555788" MODIFIED="1387293560169">
+<node TEXT="some properties are expansive" ID="ID_53128735" CREATED="1387293560492" MODIFIED="1387293566169">
+<node TEXT="a system has it if all parts have it" ID="ID_903463235" CREATED="1387293566460" MODIFIED="1387293572426"/>
+<node TEXT="e.g., being &quot;liquid&quot;" ID="ID_1985673733" CREATED="1387293572652" MODIFIED="1387293577738"/>
+</node>
+<node TEXT="others are emergent" ID="ID_31707714" CREATED="1387293578556" MODIFIED="1387293583209">
+<node TEXT="the property of a system is not a property of its parts" ID="ID_1928118158" CREATED="1387293583468" MODIFIED="1387293596330"/>
+<node TEXT="e.g., being &quot;secure&quot; or &quot;cheap&quot;" ID="ID_119459303" CREATED="1387293596508" MODIFIED="1387293613562"/>
+</node>
+<node TEXT="expansive properties cannot be implemented in ends only" ID="ID_1035964494" CREATED="1387295272952" MODIFIED="1387295292437"/>
+</node>
+<node TEXT="late binding" ID="ID_732120188" CREATED="1387293945615" MODIFIED="1387293948380">
+<node TEXT="in lower layers of a system, new unpredicted uses are going to appear" ID="ID_73500977" CREATED="1387293948623" MODIFIED="1387293964060"/>
+<node TEXT="thus, be conservative about embedding functions in the lower layers" ID="ID_1776179937" CREATED="1387293971087" MODIFIED="1387293982653"/>
+<node TEXT="... because everybody above has to live with it." ID="ID_1091100408" CREATED="1387293989407" MODIFIED="1387293997901"/>
+<node TEXT="keep bottom layers as general and straightforward as possible" ID="ID_251190126" CREATED="1387294012160" MODIFIED="1387294021933"/>
+<node TEXT="in economy" ID="ID_60636150" CREATED="1387294069904" MODIFIED="1387294074621">
+<node TEXT="defer decisions until you know enough" ID="ID_1927384168" CREATED="1387294074912" MODIFIED="1387294081278"/>
+<node TEXT="preserve &quot;real options&quot;" ID="ID_296078584" CREATED="1387294081488" MODIFIED="1387294092398"/>
+<node TEXT="trade-off" ID="ID_1587608733" CREATED="1387294163857" MODIFIED="1387294166254">
+<node TEXT="preserve options vs optimize" ID="ID_621376056" CREATED="1387294166561" MODIFIED="1387294173438"/>
+</node>
+</node>
+</node>
+<node TEXT="options" ID="ID_1111295413" CREATED="1387294107328" MODIFIED="1387294109406">
+<node TEXT="end-to-end" ID="ID_570707913" CREATED="1387294109761" MODIFIED="1387294115101">
+<node TEXT="recognize uncertainty about future appliciations" ID="ID_439084879" CREATED="1387294117920" MODIFIED="1387294133022"/>
+</node>
+<node TEXT="hourglass" ID="ID_1037108533" CREATED="1387294133904" MODIFIED="1387294137598">
+<node TEXT="recognize uncertainty about future technologies" ID="ID_1303253084" CREATED="1387294137857" MODIFIED="1387294145918"/>
+</node>
+</node>
+</node>
+<node TEXT="controversies, challenges" ID="ID_1908928985" CREATED="1387292813623" MODIFIED="1387292817348">
+<node TEXT="not so serious concerns" ID="ID_547399691" CREATED="1387295223576" MODIFIED="1387295227909">
+<node TEXT="functions *must* be in the network" ID="ID_64667320" CREATED="1387294262610" MODIFIED="1387294270063"/>
+<node TEXT="principle is too austere, pure, idealistic" ID="ID_193963834" CREATED="1387294271522" MODIFIED="1387294280447"/>
+<node TEXT="end-to-end blocks innovation" ID="ID_703299579" CREATED="1387294280930" MODIFIED="1387294286591"/>
+<node TEXT="end-to-end is obsolete" ID="ID_1719678287" CREATED="1387294289058" MODIFIED="1387294293487"/>
+<node TEXT="end-to-end is a cult" ID="ID_1533625724" CREATED="1387294294002" MODIFIED="1387294297375"/>
+</node>
+<node TEXT="why challege end-to-end?" ID="ID_893637528" CREATED="1387294318898" MODIFIED="1387294331199">
+<node TEXT="sellers need claims to sell more stuff" ID="ID_1591367923" CREATED="1387294331634" MODIFIED="1387294340639"/>
+<node TEXT="&quot;we build a secure router&quot;" ID="ID_1226350267" CREATED="1387294352498" MODIFIED="1387294361552"/>
+<node TEXT="&quot;DNSSEC makes internet completely safe&quot;" ID="ID_275422367" CREATED="1387294361746" MODIFIED="1387294373600"/>
+<node TEXT="&quot;Firewalls make a system secure&quot;" ID="ID_816589777" CREATED="1387294413779" MODIFIED="1387294420800"/>
+</node>
+<node TEXT="serious concerns" ID="ID_556051918" CREATED="1387294433779" MODIFIED="1387294436848">
+<node TEXT="security, robustness, safety" ID="ID_1563981580" CREATED="1387294437139" MODIFIED="1387294780998">
+<node TEXT="Internet is generative" ID="ID_689516891" CREATED="1387294535395" MODIFIED="1387294539585">
+<node TEXT="control is at edges only" ID="ID_1615083501" CREATED="1387294681364" MODIFIED="1387294685969"/>
+<node TEXT="that makes it insecure by design" ID="ID_250981804" CREATED="1387294539780" MODIFIED="1387294546385"/>
+<node TEXT="users are in control, i.e., free to cause harm" ID="ID_247339788" CREATED="1387294546611" MODIFIED="1387294555426"/>
+</node>
+<node TEXT="perfect enforcement seems attractive" ID="ID_634179278" CREATED="1387294574004" MODIFIED="1387294581809">
+<node TEXT="technologies that lock down user systems" ID="ID_1772571853" CREATED="1387294582132" MODIFIED="1387294592465"/>
+<node TEXT="e.g., apple&apos;s iPhone" ID="ID_405297243" CREATED="1387294592756" MODIFIED="1387294598977"/>
+</node>
+<node TEXT="cloud makes us dependent" ID="ID_1746327506" CREATED="1387294631108" MODIFIED="1387294667890">
+<node TEXT="loss of privacy is inherent in E2E" ID="ID_1458754095" CREATED="1387294711573" MODIFIED="1387294719618"/>
+</node>
+</node>
+<node TEXT="some policy arguments are not compatible with E2E" ID="ID_1952632237" CREATED="1387294465299" MODIFIED="1387294476464">
+<node TEXT="examples" ID="ID_1246943046" CREATED="1387294824646" MODIFIED="1387294826386">
+<node TEXT="law enforcement wants to tap phones" ID="ID_1495882149" CREATED="1387294826629" MODIFIED="1387294841347"/>
+<node TEXT="wanna block spam in the network" ID="ID_1708012429" CREATED="1387294841557" MODIFIED="1387294847731"/>
+</node>
+<node TEXT="some functions involve &#x2265;3 parties" ID="ID_204203046" CREATED="1387295004999" MODIFIED="1387295015076">
+<node TEXT="non-discretionary control" ID="ID_1257434639" CREATED="1387295017575" MODIFIED="1387295024452"/>
+<node TEXT="who is the authority?" ID="ID_499162437" CREATED="1387295025223" MODIFIED="1387295031332"/>
+<node TEXT="sometimes authority is disputed" ID="ID_693016902" CREATED="1387295057303" MODIFIED="1387295062548"/>
+<node TEXT="often, there are multiple autonomous subdomains" ID="ID_1350121915" CREATED="1387295062759" MODIFIED="1387295077349"/>
+</node>
+<node TEXT="yet..." ID="ID_1763633331" CREATED="1387294965719" MODIFIED="1387294969684">
+<node TEXT="E2E is about function placement, not function choice" ID="ID_1450225552" CREATED="1387294969958" MODIFIED="1387294978164"/>
+</node>
+</node>
+<node TEXT="Internet design principles are at some limit" ID="ID_1883496968" CREATED="1387294487443" MODIFIED="1387294496976">
+<node TEXT="need a clean slate redesign?" ID="ID_810836735" CREATED="1387294500563" MODIFIED="1387294505312"/>
+<node TEXT="Now, we have a better view of the functionality" ID="ID_16313268" CREATED="1387295148408" MODIFIED="1387295156005">
+<node TEXT="thus, it might be safe to put it in the network" ID="ID_80042008" CREATED="1387295156264" MODIFIED="1387295163717"/>
+</node>
+<node TEXT="We might know some extensive property now, that we didn&apos;t know before" ID="ID_1598766456" CREATED="1387295196504" MODIFIED="1387295211286"/>
+</node>
+</node>
+</node>
+<node TEXT="security" ID="ID_1605417427" CREATED="1387292817543" MODIFIED="1387292819093">
+<node TEXT="what about corrupted endpoints?" ID="ID_1522982677" CREATED="1387295472954" MODIFIED="1387295479639">
+<node TEXT="Q" ID="ID_710482644" CREATED="1387295557499" MODIFIED="1387295558392">
+<node TEXT="e.g., malware causing DDOS attacks" ID="ID_870934582" CREATED="1387295479914" MODIFIED="1387295502247"/>
+</node>
+<node TEXT="A" ID="ID_1956865245" CREATED="1387295562459" MODIFIED="1387295563480">
+<node TEXT="is this even an argument against modularity?" ID="ID_1862444586" CREATED="1387295506410" MODIFIED="1387295515239"/>
+</node>
+</node>
+<node TEXT="what happens when things break?" ID="ID_852000416" CREATED="1387295708604" MODIFIED="1387295716233">
+<node TEXT="Q" ID="ID_743817741" CREATED="1387295716475" MODIFIED="1387295718201">
+<node TEXT="e.g., how to prevent somebody from talking to you?" ID="ID_743826651" CREATED="1387295718507" MODIFIED="1387295729688"/>
+<node TEXT="e.g., whom to complain to if something goes wrong?" ID="ID_387011730" CREATED="1387295730860" MODIFIED="1387295740601"/>
+<node TEXT="do all ends need to cooperate? What if some are byzantine?" ID="ID_10568587" CREATED="1387295937613" MODIFIED="1387295954507"/>
+</node>
+<node TEXT="A" ID="ID_1386779996" CREATED="1387295743275" MODIFIED="1387295744409">
+<node TEXT="need to carefully specify the property you want to enforce" ID="ID_1385215443" CREATED="1387295744796" MODIFIED="1387295758601"/>
+<node TEXT="in this case" ID="ID_803658453" CREATED="1387295758811" MODIFIED="1387295800889">
+<node TEXT="want to limit incoming traffic" ID="ID_1724781323" CREATED="1387295801148" MODIFIED="1387295807753"/>
+<node TEXT="or want some fairness regarding sources of incoming traffic" ID="ID_487074696" CREATED="1387295807964" MODIFIED="1387295816713"/>
+</node>
+<node TEXT="E2E says that you can do stuff in the network, but you need to convince yourself that it can be done entirely in the network" ID="ID_77738105" CREATED="1387295987710" MODIFIED="1387296011963"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Papers" POSITION="left" ID="ID_1384921320" CREATED="1379576056086" MODIFIED="1379576058096">
 <edge COLOR="#ff00ff"/>
